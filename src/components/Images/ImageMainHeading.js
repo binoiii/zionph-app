@@ -6,7 +6,7 @@ import BackgroundImage from "gatsby-background-image";
 export const ImageMainHeading = ({ children }) => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "bg-livingroom-sm.jpg" }) {
+      homeImage: file(relativePath: { eq: "bg-livingroom.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1080, quality: 100) {
             ...GatsbyImageSharpFluid
@@ -14,11 +14,35 @@ export const ImageMainHeading = ({ children }) => {
           }
         }
       }
+      homeImageMd: file(relativePath: { eq: "bg-livingroom-md.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 768, quality: 100) {
+            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluidLimitPresentationSize
+          }
+        }
+      }
+      homeImageSm: file(relativePath: { eq: "bg-livingroom-sm.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 5676, quality: 100) {
+            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluidLimitPresentationSize
+          }
+        }
+      }
     }
   `);
-  const dataImage = data.placeholderImage.childImageSharp.fluid;
+
+  const { homeImage, homeImageMd, homeImageSm } = data;
+
+  const source = [
+    { ...homeImageSm.childImageSharp.fluid },
+    { ...homeImageMd.childImageSharp.fluid, media: "(min-width:576px)" },
+    { ...homeImage.childImageSharp.fluid, media: "(min-width:768px)" },
+  ];
+
   return (
-    <BackgroundImage fluid={dataImage} className="main-heading">
+    <BackgroundImage atl="HomeImage" fluid={source} className="main-heading">
       {children}
     </BackgroundImage>
   );

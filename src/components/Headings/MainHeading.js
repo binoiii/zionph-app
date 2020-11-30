@@ -16,6 +16,8 @@ export const MainHeading = () => {
           }}
         >
           <Col
+            sm={12}
+            md={6}
             className="d-flex flex-column p-5 justify-content-center align-items-center "
             style={{
               height: "100%",
@@ -37,7 +39,6 @@ export const MainHeading = () => {
               </LinkScroll>
             </Button>
           </Col>
-          <Col></Col>
         </Row>
       </ImageMainHeading>
       <ImageSubHeading />

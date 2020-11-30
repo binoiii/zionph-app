@@ -5,6 +5,13 @@ import Img from "gatsby-image";
 const ImageDeluxe = ({ className }) => {
   const data = useStaticQuery(graphql`
     query {
+      deluxe: file(relativePath: { eq: "products/deluxe/deluxe-shadow.png" }) {
+        childImageSharp {
+          fixed(width: 500, quality: 100) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
       deluxeSm: file(
         relativePath: { eq: "products/deluxe/deluxe-shadow.png" }
       ) {
@@ -14,17 +21,10 @@ const ImageDeluxe = ({ className }) => {
           }
         }
       }
-      deluxe: file(relativePath: { eq: "products/deluxe/deluxe-shadow.png" }) {
-        childImageSharp {
-          fixed(width: 500, quality: 100) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
     }
   `);
 
-  const { deluxeSm, deluxe } = data;
+  const { deluxe, deluxeSm } = data;
 
   const sources = [
     {
@@ -36,7 +36,7 @@ const ImageDeluxe = ({ className }) => {
     },
   ];
 
-  return <Img alt="Zion Deluxe" fixed={sources} className={className} />;
+  return <Img alt="ZionDeluxe" fixed={sources} className={className} />;
 };
 
 export default ImageDeluxe;
