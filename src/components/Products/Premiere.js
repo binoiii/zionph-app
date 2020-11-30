@@ -3,9 +3,9 @@ import { Row, Col, Button } from "react-bootstrap";
 
 import DetailsModal from "../Modals/DetailsModal";
 import OrderFormModal from "../Modals/OrderFormModal";
-import ImageDeluxe from "../Images/ImageDeluxe";
+import ImagePremiere from "../Images/ImagePremiere";
 
-const Deluxe = () => {
+const Premiere = () => {
   const [modalDetailsShow, setModalDetailsShow] = useState(false);
   const [modalOrderShow, setModalOrderShow] = useState(false);
 
@@ -16,9 +16,9 @@ const Deluxe = () => {
   const closeModalOrder = () => setModalOrderShow(false);
 
   return (
-    <Row className="deluxe pt-5 mt-5">
+    <Row className="premiere pt-5 mt-5">
       <Col sm={12} md={6}>
-        <ImageDeluxe />
+        <ImagePremiere />
       </Col>
       <Col
         sm={12}
@@ -26,21 +26,21 @@ const Deluxe = () => {
         className="d-flex flex-column align-items-end pt-sm-0 p-md-5"
       >
         <h1 className="my-0 text-right">
-          <span className="text-primary">zion</span>Deluxe
+          <span className="text-primary">zion</span>Premiere
         </h1>
         <span className="text-danger">
           <small
             className="text-gray mr-1"
             style={{ textDecoration: "line-through" }}
           >
-            &#8369; 199,998
+            &#8369; 131,998
           </small>
-          &#8369; 99,999
+          &#8369; 65,999
         </span>
         <div className="my-3 my-md-4 my-lg-5 text-right">
           <p>Core for more Intelligent</p>
-          <p>8D Massage Manipulator</p>
-          <p className="mb-0">6 Smart Massage Programs</p>
+          <p>4D Massage Manipulator</p>
+          <p className="mb-0">8 Points Massage Focus</p>
         </div>
         <Button variant="outline-secondary" onClick={showModalDetails}>
           View Details
@@ -59,4 +59,4 @@ const Deluxe = () => {
   );
 };
 
-export default Deluxe;
+export default Premiere;

@@ -33,14 +33,14 @@ const Deluxe = () => {
             className="text-gray mr-1"
             style={{ textDecoration: "line-through" }}
           >
-            &#8369; 199,998
+            &#8369; 111,998
           </small>
-          &#8369; 99,999
+          &#8369; 55,999
         </span>
         <div className="my-3 my-md-4 my-lg-5 text-right">
           <p>Core for more Intelligent</p>
-          <p>8D Massage Manipulator</p>
-          <p className="mb-0">6 Smart Massage Programs</p>
+          <p>3D Massage Manipulator</p>
+          <p className="mb-0">Deep Spa and Multipoint Massage</p>
         </div>
         <Button variant="outline-secondary" onClick={showModalDetails}>
           View Details

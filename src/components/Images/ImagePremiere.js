@@ -2,14 +2,23 @@ import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 
-const ImagePrestige = () => {
+const ImagePremiere = ({ className }) => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(
-        relativePath: { eq: "products/Premiere-Shadow.png" }
+      premiere: file(
+        relativePath: { eq: "products/premiere/premiere-shadow.png" }
       ) {
         childImageSharp {
-          fixed(width: 500, quality: 100) {
+          fixed(width: 480, quality: 100) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      premiereSm: file(
+        relativePath: { eq: "products/premiere/premiere-shadow.png" }
+      ) {
+        childImageSharp {
+          fixed(width: 315, quality: 100) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -17,8 +26,19 @@ const ImagePrestige = () => {
     }
   `);
 
-  const imageData = data.placeholderImage.childImageSharp.fixed;
-  return <Img fixed={imageData} />;
+  const { premiereSm, premiere } = data;
+
+  const sources = [
+    {
+      ...premiereSm.childImageSharp.fixed,
+    },
+    {
+      ...premiere.childImageSharp.fixed,
+      media: "(min-width: 576px)",
+    },
+  ];
+
+  return <Img alt="ZionPremiere" fixed={sources} className={className} />;
 };
 
-export default ImagePrestige;
+export default ImagePremiere;
