@@ -3,9 +3,9 @@ import { Row, Col, Button } from "react-bootstrap";
 
 import DetailsModal from "../Modals/DetailsModal";
 import OrderFormModal from "../Modals/OrderFormModal";
-import ImageDeluxe from "../Images/ImageDeluxe";
+import ImageExecutive from "../Images/ImageExecutive";
 
-const Deluxe = () => {
+const Executive = () => {
   const [modalDetailsShow, setModalDetailsShow] = useState(false);
   const [modalOrderShow, setModalOrderShow] = useState(false);
 
@@ -16,9 +16,9 @@ const Deluxe = () => {
   const closeModalOrder = () => setModalOrderShow(false);
 
   return (
-    <Row className="deluxe pt-5 mt-5">
+    <Row className="executive pt-5 mt-5">
       <Col sm={12} md={6}>
-        <ImageDeluxe />
+        <ImageExecutive />
       </Col>
       <Col
         sm={12}
@@ -26,7 +26,7 @@ const Deluxe = () => {
         className="d-flex flex-column align-items-end pt-sm-0 p-md-5"
       >
         <h1 className="my-0 text-right">
-          <span className="text-primary">zion</span>Deluxe
+          <span className="text-primary">zion</span>Executive
         </h1>
         <span className="text-danger">
           <small
@@ -59,4 +59,4 @@ const Deluxe = () => {
   );
 };
 
-export default Deluxe;
+export default Executive;

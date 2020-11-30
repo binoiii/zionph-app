@@ -2,14 +2,23 @@ import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 
-const ImageExecutive = () => {
+const ImageExecutive = ({ className }) => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(
+      executive: file(
         relativePath: { eq: "products/executive/executive-shadow.png" }
       ) {
         childImageSharp {
-          fixed(width: 500, quality: 100) {
+          fixed(width: 480, quality: 100) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      executiveSm: file(
+        relativePath: { eq: "products/executive/executive-shadow.png" }
+      ) {
+        childImageSharp {
+          fixed(width: 315, quality: 100) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -17,8 +26,18 @@ const ImageExecutive = () => {
     }
   `);
 
-  const imageData = data.placeholderImage.childImageSharp.fixed;
-  return <Img fixed={imageData} />;
+  const { executiveSm, executive } = data;
+
+  const sources = [
+    {
+      ...executiveSm.childImageSharp.fixed,
+    },
+    {
+      ...executive.childImageSharp.fixed,
+      media: "(min-width: 576px)",
+    },
+  ];
+  return <Img alt="ZionExecutive" fixed={sources} className={className} />;
 };
 
 export default ImageExecutive;

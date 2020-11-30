@@ -1,11 +1,15 @@
 import React from "react";
 
 import Deluxe from "./Deluxe";
+import Prestige from "./Prestige";
+import Executive from "./Executive";
 
 const Products = () => {
   return (
-    <section id="products" className="pt-5 mt-5">
+    <section id="products">
       <Deluxe />
+      <Prestige />
+      <Executive />
     </section>
   );
 };

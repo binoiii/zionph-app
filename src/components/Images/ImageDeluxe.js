@@ -7,7 +7,7 @@ const ImageDeluxe = ({ className }) => {
     query {
       deluxe: file(relativePath: { eq: "products/deluxe/deluxe-shadow.png" }) {
         childImageSharp {
-          fixed(width: 500, quality: 100) {
+          fixed(width: 480, quality: 100) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -24,7 +24,7 @@ const ImageDeluxe = ({ className }) => {
     }
   `);
 
-  const { deluxe, deluxeSm } = data;
+  const { deluxeSm, deluxe } = data;
 
   const sources = [
     {
