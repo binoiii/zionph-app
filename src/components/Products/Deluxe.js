@@ -25,7 +25,7 @@ const Deluxe = () => {
         md={6}
         className="d-flex flex-column align-items-end pt-sm-0 p-md-5"
       >
-        <h1 className="my-0 text-right">
+        <h1 className="my-0 text-right shadow-deluxe">
           <span className="text-primary">zion</span>Deluxe
         </h1>
         <span className="text-danger">
