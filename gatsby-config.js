@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Basic Bootstrap Starter`,
-    description: `A simple Gatsby starter leveraging react-bootstrap and little else.`,
-    author: `@mik3y`,
+    title: `Zion Philippines`,
+    description: `Everybody's soothing haven`,
+    author: `@avio.tech`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -18,13 +18,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-basic-bootstrap`,
+        name: `zionph-app`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#D19E31`,
+        theme_color: `#D19E31`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/zion-icon.png`, // This path is relative to the root of the site.
       },
     },
     {

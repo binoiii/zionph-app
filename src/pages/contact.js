@@ -1,19 +1,19 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Fade from "react-reveal/Fade";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Heading from "../components/Headings/Heading";
-import MissionVision from "../components/Sections/MissionVision";
+import ContactDetails from "../components/Sections/ContactDetails";
 
-const AboutPage = () => (
+const Contact = () => (
   <Layout>
-    <SEO title="About" />
-    <Heading title="About Us" />
+    <SEO title="Contact" />
+    <Heading title="Contact Us" />
     <Fade bottom duration={1000} delay={550}>
-      <MissionVision />
+      <ContactDetails />
     </Fade>
   </Layout>
 );
 
-export default AboutPage;
+export default Contact;

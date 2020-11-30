@@ -1,0 +1,108 @@
+//Font Family
+.font-primary {
+  font-family: $font-primary;
+}
+.font-secondary {
+  font-family: $font-secondary;
+}
+
+.font-tertiary {
+  font-family: $font-tertiary;
+}
+
+//Font Size
+
+.text-xs {
+  font-size: $text-xs;
+}
+
+.text-sm {
+  font-size: $font-size-base;
+}
+
+.text-md {
+  font-size: $text-md;
+}
+
+.text-lg {
+  font-size: $text-lg;
+}
+
+.text-xl {
+  font-size: $text-xl;
+}
+
+//Letter Spacing
+
+.letter-space-none {
+  letter-spacing: 0;
+}
+
+.letter-space-xs {
+  letter-spacing: 0.1rem;
+}
+
+.letter-space-sm {
+  letter-spacing: 0.2rem;
+}
+
+.letter-space-md {
+  letter-spacing: 0.3rem;
+}
+
+.letter-space-lg {
+  letter-spacing: 0.5rem;
+}
+
+//Font Weight
+.font-weight-thin {
+  font-weight: 100;
+}
+
+.font-weight-regular {
+  font-weight: 400;
+}
+
+.font-weight-medium {
+  font-weight: 500;
+}
+
+.font-weight-heavy {
+  font-weight: 600;
+}
+
+//Font Color
+
+.text-black {
+  color: $black;
+}
+
+.text-white {
+  color: $white;
+}
+
+.text-gray {
+  color: $gray;
+}
+
+.text-gold {
+  color: $primary;
+}
+
+.text-logo {
+  color: $logo-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-secondary;
+  margin: 0;
+}
+
+p {
+  font-family: $font-primary;
+}
