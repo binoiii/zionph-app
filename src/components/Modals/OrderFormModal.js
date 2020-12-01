@@ -16,9 +16,10 @@ const OrderFormModal = props => {
         <Form
           method="post"
           netlify-honeypot="bot-field"
-          name="order details"
+          name="Order Details"
           data-netlify="true"
         >
+          <input type="hidden" name="form-name" value="Order Details" />
           <Form.Group>
             <Form.Control
               type="text"
