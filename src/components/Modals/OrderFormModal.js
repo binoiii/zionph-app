@@ -26,7 +26,7 @@ const OrderFormModal = props => {
         ...state,
       }),
     })
-      .then(() => navigate("/"))
+      .then(() => navigate(form.getAttribute("action")))
       .catch(error => alert(error));
   };
 
