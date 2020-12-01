@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Row, Col, Button } from "react-bootstrap";
 
-import DetailsModal from "../Modals/DetailsModal";
 import OrderFormModal from "../Modals/OrderFormModal";
 import ImagePremiere from "../Images/ImagePremiere";
 
@@ -52,7 +51,6 @@ const Premiere = () => {
         >
           Order Now
         </Button>
-        <DetailsModal show={modalDetailsShow} onHide={closeModalDetails} />
         <OrderFormModal show={modalOrderShow} onHide={closeModalOrder} />
       </Col>
     </Row>

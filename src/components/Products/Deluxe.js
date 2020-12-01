@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Row, Col, Button } from "react-bootstrap";
 
-import DetailsModal from "../Modals/DetailsModal";
+import DeluxeDetailsModal from "../Modals//DeluxeDetailsModal";
 import OrderFormModal from "../Modals/OrderFormModal";
 import ImageDeluxe from "../Images/ImageDeluxe";
 
@@ -52,7 +52,10 @@ const Deluxe = () => {
         >
           Order Now
         </Button>
-        <DetailsModal show={modalDetailsShow} onHide={closeModalDetails} />
+        <DeluxeDetailsModal
+          show={modalDetailsShow}
+          onHide={closeModalDetails}
+        />
         <OrderFormModal show={modalOrderShow} onHide={closeModalOrder} />
       </Col>
     </Row>

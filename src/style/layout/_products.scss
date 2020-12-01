@@ -1,8 +1,16 @@
-// .prestige,
-// .premiere {
-//   .prestige-image,
-//   .premiere-image {
-//     display: flex;
-//     justify-content: flex-end;
-//   }
-// }
+.modal-deluxe {
+  .carousel-indicators {
+    li {
+      background-color: $primary !important;
+    }
+  }
+}
+
+.prev {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.prev-next-deluxe {
+  color: $primary;
+}
