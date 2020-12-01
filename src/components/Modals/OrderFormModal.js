@@ -1,31 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
+import { navigate } from "gatsby-link";
 import { Modal, Form, Button } from "react-bootstrap";
 
-function encode(data) {
-  return Object.keys(data)
-    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-    .join("&");
-}
-
 const OrderFormModal = props => {
-  const [state, setState] = React.useState({ price: props.price });
+  // const [state, setState] = useState({ price: props.price });
 
-  const handleChange = e => {
-    setState({ ...state, [e.target.name]: e.target.value });
-  };
+  // const handleChange = e => {
+  //   setState({ ...state, [e.target.name]: e.target.value });
+  // };
 
-  const handleSubmit = e => {
-    e.preventDefault();
-    const form = e.target;
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({
-        "form-name": form.getAttribute("name"),
-        ...state,
-      }),
-    }).catch(error => alert(error));
-  };
+  // function encode(data) {
+  //   return Object.keys(data)
+  //     .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+  //     .join("&");
+  // }
+
+  // const handleSubmit = e => {
+  //   e.preventDefault();
+  //   console.log("test");
+  //   const form = e.target;
+  //   fetch("/", {
+  //     method: "POST",
+  //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
+  //     body: encode({
+  //       "form-name": form.getAttribute("name"),
+  //       ...state,
+  //     }),
+  //   })
+  //     .then(() => navigate(form.getAttribute("action")))
+  //     .catch(error => alert(error));
+  // };
 
   return (
     <Modal {...props} aria-labelledby="contained-modal-title-vcenter" centered>
@@ -39,11 +43,12 @@ const OrderFormModal = props => {
       </Modal.Header>
       <Modal.Body>
         <Form
-          method="post"
           name="order"
+          method="POST"
+          action="/"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
-          onSubmit={handleSubmit}
+          // onSubmit={handleSubmit}
         >
           <input type="hidden" name="form-name" value="order" />
           <Form.Group>
@@ -52,7 +57,7 @@ const OrderFormModal = props => {
               type="text"
               value={`${props.price} | 50% LIMITED OFF`}
               name="price"
-              onChange={handleChange}
+              // onChange={handleChange}
               disabled
               required
             />
@@ -62,7 +67,7 @@ const OrderFormModal = props => {
               type="text"
               placeholder="Full Name"
               name="fullname"
-              onChange={handleChange}
+              // onChange={handleChange}
               required
             />
           </Form.Group>
@@ -71,7 +76,7 @@ const OrderFormModal = props => {
               type="text"
               placeholder="Address"
               name="address"
-              onChange={handleChange}
+              // onChange={handleChange}
               required
             />
           </Form.Group>
@@ -80,7 +85,7 @@ const OrderFormModal = props => {
               type="number"
               placeholder="Contact Number"
               name="contact"
-              onChange={handleChange}
+              // onChange={handleChange}
               required
             />
           </Form.Group>
@@ -89,7 +94,7 @@ const OrderFormModal = props => {
               as="textarea"
               placeholder="Add a note"
               name="note"
-              onChange={handleChange}
+              // onChange={handleChange}
               rows={2}
             />
           </Form.Group>
