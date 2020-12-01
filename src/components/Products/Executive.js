@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Row, Col, Button } from "react-bootstrap";
 
+import ExecutiveDetailsModal from "../Modals/ExecutiveDetailsModal";
 import OrderFormModal from "../Modals/OrderFormModal";
 import ImageExecutive from "../Images/ImageExecutive";
 
@@ -42,16 +43,25 @@ const Executive = () => {
           <p className="mb-0">6 Smart Massage Programs</p>
         </div>
         <Button variant="outline-secondary" onClick={showModalDetails}>
-          View Details
+          More Details
         </Button>
         <Button
           className="mt-2"
-          style={{ padding: "15px 30px" }}
+          style={{ padding: "15px 31.5px" }}
           onClick={showModalOrder}
         >
           Order Now
         </Button>
-        <OrderFormModal show={modalOrderShow} onHide={closeModalOrder} />
+        <ExecutiveDetailsModal
+          show={modalDetailsShow}
+          onHide={closeModalDetails}
+        />
+        <OrderFormModal
+          product="EXECUTIVE"
+          price="&#8369; 99,999"
+          show={modalOrderShow}
+          onHide={closeModalOrder}
+        />
       </Col>
     </Row>
   );

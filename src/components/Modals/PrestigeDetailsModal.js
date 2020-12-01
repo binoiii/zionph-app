@@ -1,14 +1,14 @@
 import React from "react";
 import { Modal, Carousel } from "react-bootstrap";
 
-import ImageDeluxeDescOne from "../Images/ImageDeluxeDescOne";
-import ImageDeluxeDescTwo from "../Images/ImageDeluxeDescTwo";
+import ImagePrestigeDescOne from "../Images/ImagePrestigeDescOne";
+import ImagePrestigeDescTwo from "../Images/ImagePrestigeDescTwo";
 import PrevNextIcon from "../Utilities/PrevNextIcon";
 
-const DeluxeDetailsModal = props => {
+const PrestigeDetailsModal = props => {
   return (
     <Modal
-      className="modal-deluxe"
+      className="modal-prestige"
       {...props}
       aria-labelledby="contained-modal-title-vcenter"
       centered
@@ -18,14 +18,14 @@ const DeluxeDetailsModal = props => {
           interval={null}
           pause={"hover"}
           fade={true}
-          prevIcon={<PrevNextIcon iconClass="prev prev-next-deluxe" />}
-          nextIcon={<PrevNextIcon iconClass="prev-next-deluxe" />}
+          prevIcon={<PrevNextIcon iconClass="prev prev-next-prestige" />}
+          nextIcon={<PrevNextIcon iconClass="prev-next-prestige" />}
         >
           <Carousel.Item>
-            <ImageDeluxeDescOne />
+            <ImagePrestigeDescOne />
           </Carousel.Item>
           <Carousel.Item>
-            <ImageDeluxeDescTwo />
+            <ImagePrestigeDescTwo />
           </Carousel.Item>
         </Carousel>
       </Modal.Body>
@@ -33,4 +33,4 @@ const DeluxeDetailsModal = props => {
   );
 };
 
-export default DeluxeDetailsModal;
+export default PrestigeDetailsModal;

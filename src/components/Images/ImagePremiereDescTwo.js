@@ -2,11 +2,11 @@ import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 
-const ImageDeluxeDescOne = ({ className }) => {
+const ImagePremiereDescTwo = ({ className }) => {
   const data = useStaticQuery(graphql`
     query {
-      deluxeDescriptionOne: file(
-        relativePath: { eq: "products/deluxe/deluxe-description1.jpg" }
+      premiereDescriptionTwo: file(
+        relativePath: { eq: "products/premiere/premiere-description2.jpg" }
       ) {
         childImageSharp {
           fluid(maxWidth: 500, quality: 100) {
@@ -17,15 +17,16 @@ const ImageDeluxeDescOne = ({ className }) => {
     }
   `);
 
-  const deluxeDescriptionOne = data.deluxeDescriptionOne.childImageSharp.fluid;
+  const premiereDescriptionTwo =
+    data.premiereDescriptionTwo.childImageSharp.fluid;
 
   return (
     <Img
-      alt="ZionDeluxeDescriptionOne"
-      fluid={deluxeDescriptionOne}
+      alt="ZionPremiereDescriptionTwo"
+      fluid={premiereDescriptionTwo}
       className={className}
     />
   );
 };
 
-export default ImageDeluxeDescOne;
+export default ImagePremiereDescTwo;

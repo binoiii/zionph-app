@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Row, Col, Button } from "react-bootstrap";
 
+import PrestigeDetailsModal from "../Modals/PrestigeDetailsModal";
 import OrderFormModal from "../Modals/OrderFormModal";
 import ImagePrestige from "../Images/ImagePrestige";
 
@@ -25,7 +26,8 @@ const Prestige = () => {
         className="d-flex flex-column align-items-end pt-sm-0 p-md-5"
       >
         <h1 className="my-0 text-right">
-          <span className="text-primary">zion</span>Prestige
+          <span className="text-primary">Zion</span>
+          Prestige
         </h1>
         <span className="text-danger">
           <small
@@ -42,16 +44,25 @@ const Prestige = () => {
           <p className="mb-0">Human Stimulation Massage</p>
         </div>
         <Button variant="outline-secondary" onClick={showModalDetails}>
-          View Details
+          More Details
         </Button>
         <Button
           className="mt-2"
-          style={{ padding: "15px 30px" }}
+          style={{ padding: "15px 31.5px" }}
           onClick={showModalOrder}
         >
           Order Now
         </Button>
-        <OrderFormModal show={modalOrderShow} onHide={closeModalOrder} />
+        <PrestigeDetailsModal
+          show={modalDetailsShow}
+          onHide={closeModalDetails}
+        />
+        <OrderFormModal
+          product="DELUXE"
+          price="&#8369; 79,999"
+          show={modalOrderShow}
+          onHide={closeModalOrder}
+        />
       </Col>
     </Row>
   );

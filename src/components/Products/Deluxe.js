@@ -43,11 +43,11 @@ const Deluxe = () => {
           <p className="mb-0">Deep Spa and Multipoint Massage</p>
         </div>
         <Button variant="outline-secondary" onClick={showModalDetails}>
-          View Details
+          More Details
         </Button>
         <Button
           className="mt-2"
-          style={{ padding: "15px 30px" }}
+          style={{ padding: "15px 31.5px" }}
           onClick={showModalOrder}
         >
           Order Now
@@ -56,7 +56,12 @@ const Deluxe = () => {
           show={modalDetailsShow}
           onHide={closeModalDetails}
         />
-        <OrderFormModal show={modalOrderShow} onHide={closeModalOrder} />
+        <OrderFormModal
+          product="DELUXE"
+          price="&#8369; 55,999"
+          show={modalOrderShow}
+          onHide={closeModalOrder}
+        />
       </Col>
     </Row>
   );

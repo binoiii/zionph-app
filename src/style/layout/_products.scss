@@ -1,16 +1,57 @@
+//Deluxe
 .modal-deluxe {
   .carousel-indicators {
     li {
       background-color: $primary !important;
     }
   }
+
+  .prev-next-deluxe {
+    color: $primary;
+  }
 }
 
+//Premiere
+.modal-premiere {
+  .carousel-indicators {
+    li {
+      background-color: $premiere !important;
+    }
+  }
+
+  .prev-next-premiere {
+    color: $premiere;
+  }
+}
+
+//Prestige
+.modal-prestige {
+  .carousel-indicators {
+    li {
+      background-color: $prestige !important;
+    }
+  }
+
+  .prev-next-prestige {
+    color: $prestige;
+  }
+}
+
+//Executive
+.modal-executive {
+  .carousel-indicators {
+    li {
+      background-color: $executive !important;
+    }
+  }
+
+  .prev-next-executive {
+    color: $executive;
+  }
+}
+
+//Prev Button
 .prev {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
-}
-
-.prev-next-deluxe {
-  color: $primary;
 }
