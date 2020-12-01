@@ -1,7 +1,32 @@
 import React from "react";
 import { Modal, Form, Button } from "react-bootstrap";
 
+function encode(data) {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+}
+
 const OrderFormModal = props => {
+  const [state, setState] = React.useState({ price: props.price });
+
+  const handleChange = e => {
+    setState({ ...state, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = e => {
+    e.preventDefault();
+    const form = e.target;
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({
+        "form-name": form.getAttribute("name"),
+        ...state,
+      }),
+    }).catch(error => alert(error));
+  };
+
   return (
     <Modal {...props} aria-labelledby="contained-modal-title-vcenter" centered>
       <Modal.Header closeButton>
@@ -13,14 +38,21 @@ const OrderFormModal = props => {
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <Form method="POST" name="Order Details" data-netlify="true">
-          <input type="hidden" name="form-name" value="Order Details" />
+        <Form
+          method="post"
+          name="order"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+          onSubmit={handleSubmit}
+        >
+          <input type="hidden" name="form-name" value="order" />
           <Form.Group>
             <Form.Control
+              className="bg-white text-danger text-center"
               type="text"
               value={`${props.price} | 50% LIMITED OFF`}
               name="price"
-              className="bg-white text-danger text-center"
+              onChange={handleChange}
               disabled
               required
             />
@@ -30,6 +62,7 @@ const OrderFormModal = props => {
               type="text"
               placeholder="Full Name"
               name="fullname"
+              onChange={handleChange}
               required
             />
           </Form.Group>
@@ -38,6 +71,7 @@ const OrderFormModal = props => {
               type="text"
               placeholder="Address"
               name="address"
+              onChange={handleChange}
               required
             />
           </Form.Group>
@@ -46,6 +80,7 @@ const OrderFormModal = props => {
               type="number"
               placeholder="Contact Number"
               name="contact"
+              onChange={handleChange}
               required
             />
           </Form.Group>
@@ -53,7 +88,8 @@ const OrderFormModal = props => {
             <Form.Control
               as="textarea"
               placeholder="Add a note"
-              name="notes"
+              name="note"
+              onChange={handleChange}
               rows={2}
             />
           </Form.Group>
