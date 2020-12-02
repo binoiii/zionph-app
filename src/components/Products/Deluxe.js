@@ -43,12 +43,15 @@ const Deluxe = () => {
           <p>3D Massage Manipulator</p>
           <p className="mb-0">Deep Spa and Multipoint Massage</p>
         </div>
-        <Button variant="outline-secondary" onClick={showModalDetails}>
+        <Button
+          variant="outline-secondary"
+          style={{ padding: "10px 20.845px" }}
+          onClick={showModalDetails}
+        >
           More Details
         </Button>
         <Button
           className="mt-2"
-          style={{ padding: "15px 31.5px" }}
           // onClick={showModalOrder}
           as={Link}
           to="/order"
