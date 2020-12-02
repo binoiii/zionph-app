@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "gatsby";
 import { Row, Col, Button } from "react-bootstrap";
 
 import DeluxeDetailsModal from "../Modals//DeluxeDetailsModal";
@@ -48,7 +49,9 @@ const Deluxe = () => {
         <Button
           className="mt-2"
           style={{ padding: "15px 31.5px" }}
-          onClick={showModalOrder}
+          // onClick={showModalOrder}
+          as={Link}
+          to="/order"
         >
           Order Now
         </Button>
