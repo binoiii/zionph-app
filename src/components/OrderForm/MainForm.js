@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { navigate } from "gatsby-link";
 import { Form, Button } from "react-bootstrap";
-import Fade from "react-reveal/Fade";
+import { Link } from "gatsby";
+import { navigate } from "gatsby-link";
 
-const Order = () => {
+const MainForm = () => {
   const [state, setState] = useState({});
 
   const handleChange = e => {
@@ -30,13 +30,12 @@ const Order = () => {
       .then(() => navigate(form.getAttribute("action")))
       .catch(error => alert(error));
   };
-
   return (
-    <section>
+    <div className="pt-3">
       <Form
         name="order"
         method="post"
-        action="/"
+        action="/thankyou"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
         onSubmit={handleSubmit}
@@ -44,20 +43,25 @@ const Order = () => {
         <input type="hidden" name="form-name" value="order" />
         <Form.Group>
           <Form.Control
-            className="bg-white text-danger text-center"
-            type="text"
-            value={`50% LIMITED OFF`}
+            type="hidden"
+            value="deluxe"
+            name="product"
+            onChange={handleChange}
+          />
+        </Form.Group>
+        <Form.Group>
+          <Form.Control
+            type="hidden"
+            value="59,999"
             name="price"
             onChange={handleChange}
-            disabled
-            required
           />
         </Form.Group>
         <Form.Group>
           <Form.Control
             type="text"
-            placeholder="Full Name"
-            name="fullname"
+            placeholder="Complete Name"
+            name="client"
             onChange={handleChange}
             required
           />
@@ -65,7 +69,7 @@ const Order = () => {
         <Form.Group>
           <Form.Control
             type="text"
-            placeholder="Address"
+            placeholder="Complete Address"
             name="address"
             onChange={handleChange}
             required
@@ -73,26 +77,34 @@ const Order = () => {
         </Form.Group>
         <Form.Group>
           <Form.Control
+            type="text"
+            placeholder="Postal Code"
+            name="postal"
+            onChange={handleChange}
+            required
+          />
+        </Form.Group>
+        <Form.Group>
+          <Form.Control
             type="number"
-            placeholder="Contact Number"
+            placeholder="Cellphone Number"
             name="contact"
             onChange={handleChange}
             required
           />
         </Form.Group>
-        <Form.Group controlId="exampleForm.ControlTextarea1">
-          <Form.Control
-            as="textarea"
-            placeholder="Add a note"
-            name="note"
-            onChange={handleChange}
-            rows={2}
-          />
-        </Form.Group>
-
         <div className="d-flex justify-content-end">
           <Button
+            as={Link}
+            to="/"
+            variant="outline-secondary"
+            style={{ padding: "15px 31.5px" }}
+          >
+            Back
+          </Button>
+          <Button
             variant="primary"
+            className="ml-3"
             style={{ padding: "15px 31.5px" }}
             type="submit"
           >
@@ -100,8 +112,8 @@ const Order = () => {
           </Button>
         </div>
       </Form>
-    </section>
+    </div>
   );
 };
 
-export default Order;
+export default MainForm;

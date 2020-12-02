@@ -1,19 +1,15 @@
 import React, { useState } from "react";
+import { Link } from "gatsby";
 import { Row, Col, Button } from "react-bootstrap";
 
 import PremiereDetailsModal from "../Modals/PremiereDetailsModal";
-import OrderFormModal from "../Modals/OrderFormModal";
 import ImagePremiere from "../Images/ImagePremiere";
 
-const Premiere = () => {
+const Premiere = ({ product, originalPrice, price }) => {
   const [modalDetailsShow, setModalDetailsShow] = useState(false);
-  const [modalOrderShow, setModalOrderShow] = useState(false);
 
   const showModalDetails = () => setModalDetailsShow(true);
   const closeModalDetails = () => setModalDetailsShow(false);
-
-  const showModalOrder = () => setModalOrderShow(true);
-  const closeModalOrder = () => setModalOrderShow(false);
 
   return (
     <Row className="premiere pt-5 mt-5">
@@ -34,34 +30,33 @@ const Premiere = () => {
             className="text-gray mr-1"
             style={{ textDecoration: "line-through" }}
           >
-            &#8369; 131,998
+            &#8369; {originalPrice}
           </small>
-          &#8369; 65,999
+          &#8369; {price}
         </span>
         <div className="my-3 my-md-4 my-lg-5 text-right">
           <p>Core for more Intelligent</p>
           <p>4D Massage Manipulator</p>
           <p className="mb-0">8 Points Massage Focus</p>
         </div>
-        <Button variant="outline-secondary" onClick={showModalDetails}>
+        <Button
+          variant="outline-secondary"
+          style={{ padding: "10px 20.845px" }}
+          onClick={showModalDetails}
+        >
           More Details
         </Button>
         <Button
           className="mt-2"
-          style={{ padding: "15px 31.5px" }}
-          onClick={showModalOrder}
+          as={Link}
+          to={`/order/${product}`}
+          state={{ product, price }}
         >
           Order Now
         </Button>
         <PremiereDetailsModal
           show={modalDetailsShow}
           onHide={closeModalDetails}
-        />
-        <OrderFormModal
-          product="PREMIERE"
-          price="&#8369; 65,999"
-          show={modalOrderShow}
-          onHide={closeModalOrder}
         />
       </Col>
     </Row>

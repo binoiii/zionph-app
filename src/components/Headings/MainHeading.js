@@ -1,4 +1,5 @@
 import React from "react";
+import Fade from "react-reveal/Fade";
 import { Col, Row, Button } from "react-bootstrap";
 import { Link as LinkScroll } from "react-scroll";
 
@@ -7,42 +8,44 @@ import ImageSubHeading from "../Images/ImageSubHeading";
 
 export const MainHeading = () => {
   return (
-    <section>
-      <ImageMainHeading>
-        <Row
-          className="p-3"
-          style={{
-            height: "100%",
-          }}
-        >
-          <Col
-            sm={12}
-            md={6}
-            className="d-flex flex-column p-5 justify-content-center align-items-center "
+    <Fade left duration={1000} delay={500} distance="30px">
+      <section>
+        <ImageMainHeading>
+          <Row
+            className="p-3"
             style={{
               height: "100%",
             }}
           >
-            <h1
-              className="company-slogan my-0 mb-2 text-center text-lg text-white letter-space-xs"
-              style={{ textTransform: "none" }}
+            <Col
+              sm={12}
+              md={6}
+              className="d-flex flex-column p-5 justify-content-center align-items-center "
+              style={{
+                height: "100%",
+              }}
             >
-              Everybody's soothing haven
-            </h1>
-            <p className="company-description my-0 mb-4 text-center text-white">
-              Bringing you the most affordable, yet highest quality massage
-              chairs and furnitures in the market
-            </p>
-            <Button variant="outline-light">
-              <LinkScroll to="products" smooth duration={500}>
-                Shop Now
-              </LinkScroll>
-            </Button>
-          </Col>
-        </Row>
-      </ImageMainHeading>
-      <ImageSubHeading />
-    </section>
+              <h1
+                className="company-slogan my-0 mb-2 text-center text-lg text-white letter-space-xs"
+                style={{ textTransform: "none" }}
+              >
+                Everybody's soothing haven
+              </h1>
+              <p className="company-description my-0 mb-4 text-center text-white">
+                Bringing you the most affordable, yet highest quality massage
+                chairs and furnitures in the market
+              </p>
+              <Button variant="outline-light">
+                <LinkScroll to="products" smooth duration={500}>
+                  Shop Now
+                </LinkScroll>
+              </Button>
+            </Col>
+          </Row>
+        </ImageMainHeading>
+        <ImageSubHeading />
+      </section>
+    </Fade>
   );
 };
 

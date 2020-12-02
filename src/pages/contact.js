@@ -10,7 +10,7 @@ const Contact = () => (
   <Layout>
     <SEO title="Contact" />
     <Heading title="Contact Us" />
-    <Fade bottom duration={1000} delay={550}>
+    <Fade left duration={1000} delay={550} distance="30px">
       <ContactDetails />
     </Fade>
   </Layout>

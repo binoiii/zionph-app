@@ -10,7 +10,7 @@ const AboutPage = () => (
   <Layout>
     <SEO title="About" />
     <Heading title="About Us" />
-    <Fade bottom duration={1000} delay={550}>
+    <Fade left duration={1000} delay={550} distance="30px">
       <MissionVision />
     </Fade>
   </Layout>

@@ -13,7 +13,7 @@ const Navigation = ({ siteTitle }) => (
         variant="light"
         expand="md"
         sticky="top"
-        className="px-0 py-2"
+        className="px-0 py-1"
       >
         <Navbar.Brand as={Link} to="/" className="d-flex align-items-center">
           <ImageLogo alt={siteTitle} />
@@ -29,11 +29,6 @@ const Navigation = ({ siteTitle }) => (
             <NavItem>
               <Nav.Link as={Link} activeClassName="active" to="/about">
                 About
-              </Nav.Link>
-            </NavItem>
-            <NavItem>
-              <Nav.Link as={Link} activeClassName="active" to="/faq">
-                Faq
               </Nav.Link>
             </NavItem>
             <NavItem className="mr-0">
