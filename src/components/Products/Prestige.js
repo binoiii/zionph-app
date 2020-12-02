@@ -3,7 +3,6 @@ import { Link } from "gatsby";
 import { Row, Col, Button } from "react-bootstrap";
 
 import PrestigeDetailsModal from "../Modals/PrestigeDetailsModal";
-import OrderFormModal from "../Modals/OrderFormModal";
 import ImagePrestige from "../Images/ImagePrestige";
 
 const Prestige = ({ product, originalPrice, price }) => {

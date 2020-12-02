@@ -4,10 +4,11 @@ import { Container, Row, Col } from "react-bootstrap";
 
 import MainForm from "./MainForm";
 
-const OrderForm = ({ location }) => {
-  const { product } = location.state;
-  const { price } = location.state;
-
+const OrderForm = ({
+  location: {
+    state: { product, price },
+  },
+}) => {
   return (
     <section className="order">
       <Container>
