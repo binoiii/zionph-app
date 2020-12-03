@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 
 // const facebookAppId = "<PAGE_ID>";
 
-const CustomerChat = () => {
+const MessengerChat = () => {
   useEffect(() => {
     window.fbAsyncInit = function() {
       window.FB.init({
@@ -35,4 +35,4 @@ const CustomerChat = () => {
   );
 };
 
-export default CustomerChat;
+export default MessengerChat;
