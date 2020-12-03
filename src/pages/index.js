@@ -21,13 +21,13 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      <MainHeading />
-      <Products />
       <BannerModal
         show={modalShow}
         onHide={() => setModalShow(false)}
         onExited={handleSession}
       />
+      <MainHeading />
+      <Products />
       {/* <CustomerChat /> */}
     </Layout>
   );
