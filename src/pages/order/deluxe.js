@@ -5,12 +5,12 @@ import Layout from "../../components/layout";
 import SEO from "../../components/seo";
 import OrderForm from "../../components/OrderForm/OrderForm";
 
-const deluxe = ({ location }) => {
+const deluxe = () => {
   return (
     <Layout>
       <SEO title="Order Form" />
       <Fade left duration={1000} distance="30px">
-        <OrderForm />
+        <OrderForm product="deluxe" price="55,999" />
       </Fade>
     </Layout>
   );

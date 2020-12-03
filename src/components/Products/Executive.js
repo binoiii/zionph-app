@@ -45,12 +45,7 @@ const Executive = ({ product, originalPrice, price }) => {
         >
           More Details
         </Button>
-        <Button
-          className="mt-2"
-          as={Link}
-          to={`/order/${product}`}
-          state={{ product, price }}
-        >
+        <Button className="mt-2" as={Link} to={`/order/${product}`}>
           Order Now
         </Button>
         <ExecutiveDetailsModal

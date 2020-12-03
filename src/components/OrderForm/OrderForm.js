@@ -4,7 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 
 import MainForm from "./MainForm";
 
-const OrderForm = () => {
+const OrderForm = ({ product, price }) => {
   return (
     <section className="order">
       <Container>
@@ -13,9 +13,9 @@ const OrderForm = () => {
             <div className="order-head text-center">
               <h4>
                 <span className="text-gold">ZION</span>
-                <span>{""}</span>
+                <span>{product}</span>
               </h4>
-              <p className="text-danger">{`₱ ${""} - 50% Limited Time Offer`}</p>
+              <p className="text-danger">{`₱ ${price} - 50% Limited Time Offer`}</p>
               <p>
                 Please fill out the form to reserve your unit. Upon submitting
                 this form, strictly{" "}
