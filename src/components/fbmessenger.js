@@ -7,7 +7,7 @@ const MessengerChat = () => {
     window.fbAsyncInit = function() {
       window.FB.init({
         xfbml: true,
-        version: "v9.0",
+        version: "v8.0",
       });
     };
     (function(d, s, id) {

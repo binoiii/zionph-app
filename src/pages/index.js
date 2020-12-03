@@ -9,14 +9,13 @@ import Products from "../components/Products/Products";
 import BannerModal from "../components/Modals/BannerModal";
 
 const IndexPage = () => {
-  const [modalShow, setModalShow] = useState();
+  const [modalShow, setModalShow] = useState(true);
 
   const handleSession = () => sessionStorage.setItem("visited", true);
 
   useEffect(() => {
     const visited = sessionStorage.getItem("visited");
     if (visited) return setModalShow(false);
-    return setModalShow(true);
   }, []);
 
   return (
