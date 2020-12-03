@@ -43,22 +43,6 @@ const MainForm = ({ product, price }) => {
         <input type="hidden" name="form-name" value="order" />
         <Form.Group>
           <Form.Control
-            type="hidden"
-            value={product}
-            name="product"
-            onChange={handleChange}
-          />
-        </Form.Group>
-        <Form.Group>
-          <Form.Control
-            type="hidden"
-            value={price}
-            name="price"
-            onChange={handleChange}
-          />
-        </Form.Group>
-        <Form.Group>
-          <Form.Control
             type="text"
             placeholder="Complete Name"
             name="client"

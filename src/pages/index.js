@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 
+import { CustomerChat } from "./fbmessenger";
+
 import SEO from "../components/seo";
 import Layout from "../components/layout";
 import MainHeading from "../components/Headings/MainHeading";
@@ -27,6 +29,7 @@ const IndexPage = () => {
         onHide={() => setModalShow(false)}
         onExited={handleSession}
       />
+      <CustomerChat />
     </Layout>
   );
 };
