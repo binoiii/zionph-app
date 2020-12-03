@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import { CustomerChat } from "./fbmessenger";
+import { CustomerChat } from "../fbmessenger";
 
 import SEO from "../components/seo";
 import Layout from "../components/layout";

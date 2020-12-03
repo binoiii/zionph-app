@@ -4,7 +4,6 @@ import { useStaticQuery, graphql } from "gatsby";
 import { Container } from "react-bootstrap";
 
 import Navigation from "./Navigation/Navigation";
-// import { CustomerChat } from "./fbmessenger";
 import Footer from "./Footer/Footer";
 import "../style/main.scss";
 
