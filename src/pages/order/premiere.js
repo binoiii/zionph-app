@@ -10,7 +10,7 @@ const premiere = ({ location }) => {
     <Layout>
       <SEO title="Order Form" />
       <Fade left duration={1000} distance="30px">
-        <OrderForm location={location} />
+        {location && <OrderForm location={location} />}
       </Fade>
     </Layout>
   );
