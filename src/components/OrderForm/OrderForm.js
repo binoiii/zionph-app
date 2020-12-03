@@ -25,7 +25,7 @@ const OrderForm = ({ product, price }) => {
                 of order.
               </p>
             </div>
-            <MainForm />
+            <MainForm product={product} price={price} />
           </Col>
         </Row>
       </Container>

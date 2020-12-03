@@ -3,8 +3,8 @@ import { Form, Button } from "react-bootstrap";
 import { Link } from "gatsby";
 import { navigate } from "gatsby-link";
 
-const MainForm = () => {
-  const [state, setState] = useState({});
+const MainForm = ({ product, price }) => {
+  const [state, setState] = useState({ product, price });
 
   const handleChange = e => {
     setState({ ...state, [e.target.name]: e.target.value });
@@ -44,7 +44,7 @@ const MainForm = () => {
         <Form.Group>
           <Form.Control
             type="hidden"
-            value="deluxe"
+            value={product}
             name="product"
             onChange={handleChange}
           />
@@ -52,7 +52,7 @@ const MainForm = () => {
         <Form.Group>
           <Form.Control
             type="hidden"
-            value="59,999"
+            value={price}
             name="price"
             onChange={handleChange}
           />
