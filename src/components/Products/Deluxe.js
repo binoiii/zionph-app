@@ -5,7 +5,7 @@ import { Row, Col, Button } from "react-bootstrap";
 import DeluxeDetailsModal from "../Modals//DeluxeDetailsModal";
 import ImageDeluxe from "../Images/ImageDeluxe";
 
-const Deluxe = ({ product, originalPrice, price }) => {
+const Deluxe = ({ product = "deluxe", originalPrice, price = "55,999" }) => {
   const [modalDetailsShow, setModalDetailsShow] = useState(false);
 
   const showModalDetails = () => setModalDetailsShow(true);

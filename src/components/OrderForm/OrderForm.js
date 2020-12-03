@@ -4,14 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 
 import MainForm from "./MainForm";
 
-const OrderForm = ({
-  location: {
-    state: { product, price },
-  },
-}) => {
-  const productName = product ? product : "";
-  const productPrice = price ? price : "";
-
+const OrderForm = () => {
   return (
     <section className="order">
       <Container>
@@ -20,9 +13,9 @@ const OrderForm = ({
             <div className="order-head text-center">
               <h4>
                 <span className="text-gold">ZION</span>
-                <span>{productName}</span>
+                <span>{""}</span>
               </h4>
-              <p className="text-danger">{`₱ ${productPrice} - 50% Limited Time Offer`}</p>
+              <p className="text-danger">{`₱ ${""} - 50% Limited Time Offer`}</p>
               <p>
                 Please fill out the form to reserve your unit. Upon submitting
                 this form, strictly{" "}
