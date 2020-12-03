@@ -10,7 +10,7 @@ const deluxe = ({ location }) => {
     <Layout>
       <SEO title="Order Form" />
       <Fade left duration={1000} distance="30px">
-        {location && <OrderForm location={location} />}
+        <OrderForm location={location} />
       </Fade>
     </Layout>
   );
