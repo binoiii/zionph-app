@@ -5,11 +5,11 @@
  */
 
 const React = require("react");
-const { CustomerChat } = require("./src/components/fbmessenger").default;
+const MessengerChat = require("./src/components/fbmessenger").default;
 
-exports.wrapPageElement = ({ element }) => (
+exports.wrapPageElement = ({ element, props }) => (
   <React.Fragment>
     {element}
-    <CustomerChat />
+    <MessengerChat />
   </React.Fragment>
 );

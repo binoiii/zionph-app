@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 
 // const facebookAppId = "<PAGE_ID>";
 
-export function CustomerChat() {
+const CustomerChat = () => {
   useEffect(() => {
     window.fbAsyncInit = function() {
       window.FB.init({
@@ -33,4 +33,6 @@ export function CustomerChat() {
       />
     </>
   );
-}
+};
+
+export default CustomerChat;
