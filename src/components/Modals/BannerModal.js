@@ -11,7 +11,7 @@ const BannerModal = props => {
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
-      <Modal.Body>
+      <Modal.Body className="p-1">
         <ImageBanner />
       </Modal.Body>
     </Modal>
