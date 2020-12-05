@@ -1,3 +1,34 @@
+.client {
+  h4 {
+    font-family: $font-primary;
+    text-transform: none;
+  }
+
+  .client-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .client-image {
+      margin: 10px;
+      width: 300px;
+    }
+
+    @media (max-width: 768px) {
+      .client-image {
+        max-width: 250px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .client-image {
+        margin: 3px;
+        max-width: 160px;
+      }
+    }
+  }
+}
+
 .about {
   h4 {
     font-family: $font-primary;

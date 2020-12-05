@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 
-// import { CustomerChat } from "../components/fbmessenger";
-
 import SEO from "../components/seo";
 import Layout from "../components/layout";
 import MainHeading from "../components/Headings/MainHeading";
@@ -19,17 +17,19 @@ const IndexPage = () => {
   }, []);
 
   return (
-    <Layout>
-      <SEO title="Home" />
+    <>
       <BannerModal
         show={modalShow}
         onHide={() => setModalShow(false)}
         onExited={handleSession}
       />
-      <MainHeading />
-      <Products />
-      {/* <CustomerChat /> */}
-    </Layout>
+      <Layout>
+        <SEO title="Home" />
+
+        <MainHeading />
+        <Products />
+      </Layout>
+    </>
   );
 };
 
