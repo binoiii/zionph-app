@@ -35,9 +35,13 @@ module.exports = {
         includePaths: [require("path").resolve(__dirname, "node_modules")],
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `./src/data`,
+      },
+    },
   ],
   pathPrefix: "gatsby-starter-basic-bootstrap",
 };

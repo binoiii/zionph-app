@@ -1,0 +1,24 @@
+{
+  "products": [
+    {
+      "product": "deluxe",
+      "originalPrice": "111,998",
+      "price": "59,999",
+      "descriptions": [
+        "Core for more Intelligent",
+        "3D Massage Manipulator",
+        "Deep Spa and Multipoint Massage"
+      ],
+      "reviews": [
+        {
+          "client": "Client1",
+          "review": "The transaction was smooth. The customer service was superb! I will definitely order again."
+        },
+        {
+          "client": "Client2",
+          "review": "The transaction was smooth. The customer service was superb! I will definitely order again."
+        }
+      ]
+    }
+  ]
+}

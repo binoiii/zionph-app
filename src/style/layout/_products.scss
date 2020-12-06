@@ -1,3 +1,11 @@
+.product {
+  .product-description {
+    p:last-of-type {
+      margin-bottom: 0.25rem;
+    }
+  }
+}
+
 //Deluxe
 .modal-deluxe {
   .carousel-indicators {
@@ -73,8 +81,15 @@
 }
 
 .unbutton.btn-primary:focus {
-  color: $black;
   background-color: $white;
+  color: $black;
+}
+
+.unbutton.btn-primary:active {
+  outline: none !important;
+  border: none !important;
+  background-color: white !important;
+  color: $black !important;
 }
 
 //Review Card

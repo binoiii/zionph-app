@@ -5,6 +5,8 @@ import PrevNextIcon from "../Utilities/PrevNextIcon";
 import ReviewCard from "./ReviewCard";
 
 const ReviewModal = props => {
+  const { reviews } = props;
+
   return (
     <Modal
       className="modal-review"
@@ -20,12 +22,18 @@ const ReviewModal = props => {
           prevIcon={<PrevNextIcon iconClass="prev prev-next-review" />}
           nextIcon={<PrevNextIcon iconClass="prev-next-review" />}
         >
-          <Carousel.Item>
+          {reviews &&
+            reviews.map((review, i) => (
+              <Carousel.Item key={i}>
+                <ReviewCard review={review} />
+              </Carousel.Item>
+            ))}
+          {/* <Carousel.Item>
             <ReviewCard />
           </Carousel.Item>
           <Carousel.Item>
             <ReviewCard />
-          </Carousel.Item>
+          </Carousel.Item> */}
         </Carousel>
       </Modal.Body>
     </Modal>

@@ -5,10 +5,12 @@ import { IconContext } from "react-icons";
 
 import Star from "../../components/Utilities/Star.js";
 
-const ReviewCard = () => {
+const ReviewCard = ({ review: { client, review } }) => {
   return (
     <Card className="review-card">
-      <Card.Body style={{ padding: "2rem 2.5rem", margin: "2rem 0" }}>
+      <Card.Body
+        style={{ padding: "1.5rem 2.5rem 2.5rem 2.5rem", margin: "2rem 0" }}
+      >
         <Card.Title className="d-flex align-items-center">
           <div className="review-card-profile">
             <IconContext.Provider
@@ -18,7 +20,7 @@ const ReviewCard = () => {
             </IconContext.Provider>
           </div>
           <div className="ml-3 font-weight-heavy">
-            Albino C. Cordova
+            {client}
             <span
               className="d-block mt-1 text-primary"
               style={{ marginLeft: "-2px" }}
@@ -27,11 +29,7 @@ const ReviewCard = () => {
             </span>
           </div>
         </Card.Title>
-        <Card.Text className="mt-5 mb-3">
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content. Some quick example text to build on the
-          card title and make up the bulk of the card's content.
-        </Card.Text>
+        <Card.Text className="mt-5 mb-3">{review}</Card.Text>
       </Card.Body>
     </Card>
   );
