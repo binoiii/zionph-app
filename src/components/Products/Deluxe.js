@@ -2,14 +2,18 @@ import React, { useState } from "react";
 import { Link } from "gatsby";
 import { Row, Col, Button } from "react-bootstrap";
 
-import DeluxeDetailsModal from "../Modals//DeluxeDetailsModal";
 import ImageDeluxe from "../Images/ImageDeluxe";
+import DeluxeDetailsModal from "../Modals/DeluxeDetailsModal";
+import ReviewModal from "../Modals/ReviewModal";
 
 const Deluxe = ({ product = "deluxe", originalPrice, price = "55,999" }) => {
   const [modalDetailsShow, setModalDetailsShow] = useState(false);
+  const [modalReviewShow, setModalReviewShow] = useState(false);
 
   const showModalDetails = () => setModalDetailsShow(true);
   const closeModalDetails = () => setModalDetailsShow(false);
+  const showReviewDetails = () => setModalReviewShow(true);
+  const closeReviewDetails = () => setModalReviewShow(false);
 
   return (
     <Row className="deluxe pt-5 mt-5">
@@ -34,6 +38,9 @@ const Deluxe = ({ product = "deluxe", originalPrice, price = "55,999" }) => {
           </small>
           &#8369; {price}
         </span>
+        <Button className="unbutton text-gold" onClick={showReviewDetails}>
+          View Product Reviews
+        </Button>
         <div className="my-3 my-md-4 my-lg-5 text-right">
           <p>Core for more Intelligent</p>
           <p>3D Massage Manipulator</p>
@@ -49,6 +56,7 @@ const Deluxe = ({ product = "deluxe", originalPrice, price = "55,999" }) => {
         <Button className="mt-2" as={Link} to={`/order/${product}/`}>
           Order Now
         </Button>
+        <ReviewModal show={modalReviewShow} onHide={closeReviewDetails} />
         <DeluxeDetailsModal
           show={modalDetailsShow}
           onHide={closeModalDetails}

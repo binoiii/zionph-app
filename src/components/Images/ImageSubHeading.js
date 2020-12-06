@@ -32,7 +32,7 @@ const ImageSubHeader = () => {
           fluid={subImageOne.node.childImageSharp.fluid}
           alt={subImageOne.node.base.split(".")[0]}
         >
-          <div className="subheading-overlay">
+          <div className="subheading-overlay d-flex">
             <p className="mb-0 text-md font-secondary">Self-care everyday</p>
           </div>
         </BackgroundImage>
@@ -43,7 +43,7 @@ const ImageSubHeader = () => {
           fluid={subImageTwo.node.childImageSharp.fluid}
           alt={subImageTwo.node.base.split(".")[0]}
         >
-          <div className="subheading-overlay">
+          <div className="subheading-overlay d-flex">
             <p className="mb-0 text-md font-secondary">
               Relax your body and mind
             </p>

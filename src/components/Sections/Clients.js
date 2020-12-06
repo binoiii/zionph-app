@@ -32,7 +32,7 @@ const Clients = () => {
       <h4 className="mb-3 text-center text-gold">
         Satisfied Clients Nationwide
       </h4>
-      <div className="client-container">
+      <div className="client-container d-flex flex-wrap justify-contenxt-center">
         {clientImages.map(({ node }) => (
           <Img
             className="client-image"

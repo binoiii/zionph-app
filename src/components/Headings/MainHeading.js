@@ -1,4 +1,5 @@
 import React from "react";
+// import { useStaticQuery, graphql } from "gatsby";
 import Fade from "react-reveal/Fade";
 import { Col, Row, Button } from "react-bootstrap";
 import { Link as LinkScroll } from "react-scroll";
@@ -6,7 +7,28 @@ import { Link as LinkScroll } from "react-scroll";
 import ImageMainHeading from "../Images/ImageMainHeading";
 import ImageSubHeading from "../Images/ImageSubHeading";
 
+import useSiteMetaData from "../useSiteMetaData";
+
 export const MainHeading = () => {
+  // const data = useStaticQuery(graphql`
+  //   query {
+  //     site {
+  //       siteMetadata {
+  //         description
+  //         sub_description
+  //       }
+  //     }
+  //   }
+  // `);
+
+  // const {
+  //   site: {
+  //     siteMetadata: { description, sub_description },
+  //   },
+  // } = data;
+
+  const { description, sub_description } = useSiteMetaData();
+
   return (
     <Fade left duration={1000} delay={500} distance="30px">
       <section>
@@ -29,11 +51,10 @@ export const MainHeading = () => {
                 className="company-slogan my-0 mb-2 text-center text-lg text-white letter-space-xs"
                 style={{ textTransform: "none" }}
               >
-                Everybody's soothing haven
+                {description}
               </h1>
               <p className="company-description my-0 mb-4 text-center text-white">
-                Bringing you the most affordable, yet highest quality massage
-                chairs and furnitures in the market
+                {sub_description}
               </p>
               <Button variant="outline-light">
                 <LinkScroll to="products" smooth duration={500}>

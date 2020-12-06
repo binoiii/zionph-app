@@ -7,7 +7,7 @@
 const React = require("react");
 const MessengerChat = require("./src/components/fbmessenger").default;
 
-exports.wrapPageElement = ({ element, props }) => (
+exports.wrapPageElement = ({ element }) => (
   <React.Fragment>
     {element}
     <MessengerChat />

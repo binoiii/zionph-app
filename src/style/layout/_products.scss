@@ -55,3 +55,61 @@
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
+
+//Product Review
+.unbutton.btn-primary {
+  padding: 0;
+  border: none;
+  background-color: $white;
+  color: $primary;
+  text-transform: none;
+  font-weight: 400;
+}
+
+.unbutton.btn-primary:hover {
+  color: $black;
+  background-color: $white;
+  transition: all 0.8 ease-out;
+}
+
+.unbutton.btn-primary:focus {
+  color: $black;
+  background-color: $white;
+}
+
+//Review Card
+.review-card {
+  .review-card-profile {
+    width: 60px;
+    height: 60px;
+    background-color: $primary;
+    border-radius: 50%;
+
+    .review-card-profile-icon {
+      display: block;
+      height: 100%;
+      margin: 0 auto;
+      padding-bottom: 1.5px;
+      color: $white;
+      font-size: 2rem;
+    }
+  }
+}
+
+//Review Controls
+.modal-review {
+  .carousel-indicators {
+    li {
+      background-color: $primary !important;
+    }
+  }
+
+  .prev-next-review {
+    color: $primary;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 5%;
+  }
+}
