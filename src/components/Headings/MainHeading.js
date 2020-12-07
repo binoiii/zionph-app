@@ -10,23 +10,6 @@ import ImageSubHeading from "../Images/ImageSubHeading";
 import useSiteMetaData from "../useSiteMetaData";
 
 export const MainHeading = () => {
-  // const data = useStaticQuery(graphql`
-  //   query {
-  //     site {
-  //       siteMetadata {
-  //         description
-  //         sub_description
-  //       }
-  //     }
-  //   }
-  // `);
-
-  // const {
-  //   site: {
-  //     siteMetadata: { description, sub_description },
-  //   },
-  // } = data;
-
   const { description, sub_description } = useSiteMetaData();
 
   return (
@@ -56,7 +39,7 @@ export const MainHeading = () => {
               <p className="company-description my-0 mb-4 text-center text-white">
                 {sub_description}
               </p>
-              <Button variant="outline-light">
+              <Button variant="primary">
                 <LinkScroll to="products" smooth duration={500}>
                   Shop Now
                 </LinkScroll>

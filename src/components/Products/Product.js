@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "gatsby";
 import { Row, Col, Button } from "react-bootstrap";
 
-import ImageDeluxe from "../Images/ImageDeluxe";
+import ProductImage from "../Images/ProductImage";
 import DeluxeDetailsModal from "../Modals/DeluxeDetailsModal";
 import ReviewModal from "../Modals/ReviewModal";
 
@@ -20,7 +20,7 @@ const Deluxe = ({
   return (
     <Row className="product pt-5 mt-5">
       <Col sm={12} md={6}>
-        <ImageDeluxe />
+        <ProductImage filename="deluxe-shadow" />
       </Col>
       <Col
         sm={12}
