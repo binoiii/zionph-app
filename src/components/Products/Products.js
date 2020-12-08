@@ -20,6 +20,7 @@ const Products = () => {
               product
               originalPrice
               price
+              productImage
               descriptions
               reviews {
                 client

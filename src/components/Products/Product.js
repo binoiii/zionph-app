@@ -7,7 +7,7 @@ import DeluxeDetailsModal from "../Modals/DeluxeDetailsModal";
 import ReviewModal from "../Modals/ReviewModal";
 
 const Deluxe = ({
-  props: { product, originalPrice, price, descriptions, reviews },
+  props: { product, originalPrice, price, productImage, descriptions, reviews },
 }) => {
   const [modalDetailsShow, setModalDetailsShow] = useState(false);
   const [modalReviewShow, setModalReviewShow] = useState(false);
@@ -20,7 +20,7 @@ const Deluxe = ({
   return (
     <Row className="product pt-5 mt-5">
       <Col sm={12} md={6}>
-        <ProductImage filename="deluxe-shadow" />
+        <ProductImage alt={product} filename={productImage} />
       </Col>
       <Col
         sm={12}

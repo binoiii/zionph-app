@@ -39,11 +39,9 @@ export const MainHeading = () => {
               <p className="company-description my-0 mb-4 text-center text-white">
                 {sub_description}
               </p>
-              <Button variant="primary">
-                <LinkScroll to="products" smooth duration={500}>
-                  Shop Now
-                </LinkScroll>
-              </Button>
+              <LinkScroll to="products" smooth duration={500}>
+                <Button variant="primary">Shop Now</Button>
+              </LinkScroll>
             </Col>
           </Row>
         </ImageMainHeading>

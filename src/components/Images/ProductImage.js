@@ -2,7 +2,7 @@ import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 
-const ProductImage = ({ filename }) => {
+const ProductImage = ({ alt, filename }) => {
   const data = useStaticQuery(graphql`
     query {
       imageLargePlaceholder: allFile(
@@ -16,6 +16,7 @@ const ProductImage = ({ filename }) => {
               }
             }
             name
+            extension
           }
         }
       }
@@ -33,19 +34,25 @@ const ProductImage = ({ filename }) => {
               }
             }
             name
+            extension
           }
         }
       }
     }
   `);
 
-  const imageSmall = data.imageSmallPlaceholder.edges.find(image =>
-    image.node.name.includes(filename)
-  ).node.childImageSharp.fixed;
+  const imageSmall = data.imageSmallPlaceholder.edges.find(image => {
+    const { name, extension } = image.node;
+    const imageName = `${name}.${extension}`;
+    console.log(imageName, filename, "Checking");
+    return imageName.includes(filename);
+  }).node.childImageSharp.fixed;
 
-  const imageLarge = data.imageLargePlaceholder.edges.find(image =>
-    image.node.name.includes(filename)
-  ).node.childImageSharp.fixed;
+  const imageLarge = data.imageLargePlaceholder.edges.find(image => {
+    const { name, extension } = image.node;
+    const imageName = `${name}.${extension}`;
+    return imageName.includes(filename);
+  }).node.childImageSharp.fixed;
 
   const imageSources = [
     {
@@ -57,7 +64,7 @@ const ProductImage = ({ filename }) => {
     },
   ];
 
-  return <Img alt={filename} fixed={imageSources} />;
+  return <Img alt={alt} fixed={imageSources} />;
 };
 
 export default ProductImage;
