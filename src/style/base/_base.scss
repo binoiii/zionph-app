@@ -1,3 +1,50 @@
 .bg-gold {
   background-color: $primary;
 }
+
+.modal-content {
+  border: none !important;
+  background: transparent !important;
+}
+
+.modal-header {
+  padding: 0 !important;
+  border: none !important;
+
+  .close {
+    color: $white !important;
+    font-size: 1.5rem;
+
+    &:focus {
+      outline: none !important;
+    }
+  }
+}
+
+.modal-body {
+  padding: 0 !important;
+}
+
+//Reset Button Style
+button {
+  background: transparent;
+  box-shadow: 0px 0px 0px transparent;
+  border: 0px solid transparent;
+  text-shadow: 0px 0px 0px transparent;
+}
+
+button:hover {
+  background: transparent;
+  box-shadow: 0px 0px 0px transparent;
+  border: 0px solid transparent;
+  text-shadow: 0px 0px 0px transparent;
+}
+
+button:active {
+  outline: 0;
+  border: none;
+}
+
+button:focus {
+  outline: 0 !important;
+}

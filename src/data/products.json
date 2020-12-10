@@ -5,6 +5,10 @@
       "originalPrice": "111,998",
       "price": "59,999",
       "productImage": "deluxe-shadow.png",
+      "productDetailImages": [
+        "deluxe-description1.jpg",
+        "deluxe-description2.jpg"
+      ],
       "descriptions": [
         "Core for more Intelligent",
         "3D Massage Manipulator",
@@ -26,6 +30,10 @@
       "originalPrice": "131,998",
       "price": "65,999",
       "productImage": "premiere-shadow.png",
+      "productDetailImages": [
+        "premiere-description1.jpg",
+        "premiere-description2.jpg"
+      ],
       "descriptions": [
         "Core for more Intelligent",
         "4D Massage Manipulator",
@@ -47,6 +55,10 @@
       "originalPrice": "159,998",
       "price": "79,999",
       "productImage": "prestige-shadow.png",
+      "productDetailImages": [
+        "prestige-description1.jpg",
+        "prestige-description2.jpg"
+      ],
       "descriptions": [
         "Core for more Intelligent",
         "8D Massage Manipulator",
@@ -68,6 +80,10 @@
       "originalPrice": "199,998",
       "price": "99,999",
       "productImage": "executive-shadow.png",
+      "productDetailImages": [
+        "executive-description1.jpg",
+        "executive-description2.jpg"
+      ],
       "descriptions": [
         "Core for more Intelligent",
         "8D Massage Manipulator",

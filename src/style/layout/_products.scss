@@ -65,31 +65,17 @@
 }
 
 //Product Review
-.unbutton.btn-primary {
+.view-products {
   padding: 0;
-  border: none;
   background-color: $white;
   color: $primary;
   text-transform: none;
   font-weight: 400;
 }
 
-.unbutton.btn-primary:hover {
+.view-products:hover {
   color: $black;
-  background-color: $white;
   transition: all 0.8 ease-out;
-}
-
-.unbutton.btn-primary:focus {
-  background-color: $white;
-  color: $black;
-}
-
-.unbutton.btn-primary:active {
-  outline: none !important;
-  border: none !important;
-  background-color: white !important;
-  color: $black !important;
 }
 
 //Review Card

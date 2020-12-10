@@ -5,7 +5,7 @@ import Fade from "react-reveal/Fade";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
-const AboutPage = () => (
+const ThankYou = () => (
   <Layout>
     <SEO title="Thank You" />
     <Fade left duration={1000} distance="30px">
@@ -24,4 +24,4 @@ const AboutPage = () => (
   </Layout>
 );
 
-export default AboutPage;
+export default ThankYou;

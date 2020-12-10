@@ -1,13 +1,16 @@
 import React from "react";
 import { Modal } from "react-bootstrap";
+import Img from "gatsby-image";
 
-import ImageBanner from "../Images/ImageBanner";
+const ClientImageModal = props => {
+  const {
+    image: { childImageSharp, name },
+  } = props.image;
 
-const BannerModal = props => {
   return (
     <Modal
       {...props}
-      size="lg"
+      size="sm"
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
@@ -15,10 +18,14 @@ const BannerModal = props => {
         <Modal.Title></Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <ImageBanner />
+        <Img
+          className="client-image"
+          fluid={childImageSharp.fluid}
+          atl={name}
+        />
       </Modal.Body>
     </Modal>
   );
 };
 
-export default BannerModal;
+export default ClientImageModal;

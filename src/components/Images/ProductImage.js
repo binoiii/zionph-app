@@ -43,9 +43,8 @@ const ProductImage = ({ alt, filename }) => {
 
   const imageSmall = data.imageSmallPlaceholder.edges.find(image => {
     const { name, extension } = image.node;
-    const imageName = `${name}.${extension}`;
-    console.log(imageName, filename, "Checking");
-    return imageName.includes(filename);
+    const imageFileName = `${name}.${extension}`;
+    return imageFileName.includes(filename);
   }).node.childImageSharp.fixed;
 
   const imageLarge = data.imageLargePlaceholder.edges.find(image => {

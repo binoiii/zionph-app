@@ -27,11 +27,6 @@ const Navigation = ({ siteTitle }) => (
               </Nav.Link>
             </NavItem>
             <NavItem>
-              <Nav.Link as={Link} activeClassName="active" to="/about">
-                About
-              </Nav.Link>
-            </NavItem>
-            <NavItem>
               <Nav.Link as={Link} activeClassName="active" to="/clients">
                 Clients
               </Nav.Link>

@@ -3,11 +3,19 @@ import { Link } from "gatsby";
 import { Row, Col, Button } from "react-bootstrap";
 
 import ProductImage from "../Images/ProductImage";
-import DeluxeDetailsModal from "../Modals/DeluxeDetailsModal";
 import ReviewModal from "../Modals/ReviewModal";
+import DetailsModal from "../Modals/DetailsModal";
 
-const Deluxe = ({
-  props: { product, originalPrice, price, productImage, descriptions, reviews },
+const Product = ({
+  props: {
+    product,
+    originalPrice,
+    price,
+    productImage,
+    productDetailImages,
+    descriptions,
+    reviews,
+  },
 }) => {
   const [modalDetailsShow, setModalDetailsShow] = useState(false);
   const [modalReviewShow, setModalReviewShow] = useState(false);
@@ -27,7 +35,7 @@ const Deluxe = ({
         md={6}
         className="d-flex flex-column align-items-end pt-sm-0 p-md-5"
       >
-        <h1 className="my-0 text-right shadow-deluxe">
+        <h1 className="my-0 text-right">
           <span className="text-primary">zion</span>
           {product}
         </h1>
@@ -40,9 +48,9 @@ const Deluxe = ({
           </small>
           &#8369; {price}
         </span>
-        <Button className="unbutton text-gold" onClick={showReviewDetails}>
+        <button className="view-products text-xs" onClick={showReviewDetails}>
           View Product Reviews
-        </Button>
+        </button>
         <div className="product-description my-3 my-md-4 my-lg-5 text-right">
           {descriptions &&
             descriptions.map((description, i) => <p key={i}>{description}</p>)}
@@ -62,13 +70,15 @@ const Deluxe = ({
           onHide={closeReviewDetails}
           reviews={reviews}
         />
-        <DeluxeDetailsModal
+        <DetailsModal
           show={modalDetailsShow}
           onHide={closeModalDetails}
+          product={product}
+          images={productDetailImages}
         />
       </Col>
     </Row>
   );
 };
 
-export default Deluxe;
+export default Product;

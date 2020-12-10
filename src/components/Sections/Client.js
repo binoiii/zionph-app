@@ -1,8 +1,9 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
-import Img from "gatsby-image";
 
-const Clients = () => {
+import ClientImage from "./ClientImage";
+
+const Client = () => {
   const data = useStaticQuery(graphql`
     query {
       clientImagesPlaceHolder: allFile(
@@ -34,16 +35,11 @@ const Clients = () => {
       </h4>
       <div className="client-container d-flex flex-wrap justify-content-center">
         {clientImages.map(({ node }) => (
-          <Img
-            className="client-image"
-            key={node.id}
-            fluid={node.childImageSharp.fluid}
-            atl={node.name}
-          />
+          <ClientImage key={node.id} image={node} />
         ))}
       </div>
     </section>
   );
 };
 
-export default Clients;
+export default Client;

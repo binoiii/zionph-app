@@ -15,6 +15,9 @@ const ReviewModal = props => {
       centered
     >
       <Modal.Body>
+        <Modal.Header closeButton>
+          <Modal.Title></Modal.Title>
+        </Modal.Header>
         <Carousel
           interval={null}
           pause={"hover"}
@@ -28,12 +31,6 @@ const ReviewModal = props => {
                 <ReviewCard review={review} />
               </Carousel.Item>
             ))}
-          {/* <Carousel.Item>
-            <ReviewCard />
-          </Carousel.Item>
-          <Carousel.Item>
-            <ReviewCard />
-          </Carousel.Item> */}
         </Carousel>
       </Modal.Body>
     </Modal>
