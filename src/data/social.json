@@ -1,0 +1,16 @@
+{
+  "social": [
+    {
+      "name": "facebook",
+      "link": "www.fb.com"
+    },
+    {
+      "name": "instagram",
+      "link": "www.ig.com"
+    },
+    {
+      "name": "twitter",
+      "link": "www.twitter.com"
+    }
+  ]
+}

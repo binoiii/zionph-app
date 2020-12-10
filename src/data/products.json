@@ -1,0 +1,104 @@
+{
+  "products": [
+    {
+      "product": "deluxe",
+      "originalPrice": "111,998",
+      "price": "59,999",
+      "productImage": "deluxe-shadow.png",
+      "productDetailImages": [
+        "deluxe-description1.jpg",
+        "deluxe-description2.jpg"
+      ],
+      "descriptions": [
+        "Core for more Intelligent",
+        "3D Massage Manipulator",
+        "Deep Spa and Multipoint Massage"
+      ],
+      "reviews": [
+        {
+          "client": "Client1",
+          "review": "ClientReview1"
+        },
+        {
+          "client": "Client2",
+          "review": "ClientReview2"
+        }
+      ]
+    },
+    {
+      "product": "premiere",
+      "originalPrice": "131,998",
+      "price": "65,999",
+      "productImage": "premiere-shadow.png",
+      "productDetailImages": [
+        "premiere-description1.jpg",
+        "premiere-description2.jpg"
+      ],
+      "descriptions": [
+        "Core for more Intelligent",
+        "4D Massage Manipulator",
+        "8 Points Massage Focus"
+      ],
+      "reviews": [
+        {
+          "client": "Client1",
+          "review": "ClientReview1"
+        },
+        {
+          "client": "Client2",
+          "review": "ClientReview2"
+        }
+      ]
+    },
+    {
+      "product": "prestige",
+      "originalPrice": "159,998",
+      "price": "79,999",
+      "productImage": "prestige-shadow.png",
+      "productDetailImages": [
+        "prestige-description1.jpg",
+        "prestige-description2.jpg"
+      ],
+      "descriptions": [
+        "Core for more Intelligent",
+        "8D Massage Manipulator",
+        "Human Stimulation Massage"
+      ],
+      "reviews": [
+        {
+          "client": "Client1",
+          "review": "ClientReview1"
+        },
+        {
+          "client": "Client2",
+          "review": "ClientReview2"
+        }
+      ]
+    },
+    {
+      "product": "executive",
+      "originalPrice": "199,998",
+      "price": "99,999",
+      "productImage": "executive-shadow.png",
+      "productDetailImages": [
+        "executive-description1.jpg",
+        "executive-description2.jpg"
+      ],
+      "descriptions": [
+        "Core for more Intelligent",
+        "8D Massage Manipulator",
+        "6 Smart Massage Programs"
+      ],
+      "reviews": [
+        {
+          "client": "Client1",
+          "review": "ClientReview1"
+        },
+        {
+          "client": "Client2",
+          "review": "ClientReview2"
+        }
+      ]
+    }
+  ]
+}

@@ -27,8 +27,8 @@ const Navigation = ({ siteTitle }) => (
               </Nav.Link>
             </NavItem>
             <NavItem>
-              <Nav.Link as={Link} activeClassName="active" to="/about">
-                About
+              <Nav.Link as={Link} activeClassName="active" to="/clients">
+                Clients
               </Nav.Link>
             </NavItem>
             <NavItem className="mr-0">
