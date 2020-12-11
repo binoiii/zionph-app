@@ -6,7 +6,7 @@ import { Container, Navbar, Nav, NavItem } from "react-bootstrap";
 import ImageLogo from "../Images/ImageLogo";
 
 const Navigation = ({ siteTitle }) => (
-  <header>
+  <header id="header">
     <Container fluid="md">
       <Navbar
         bg="secondary"

@@ -5,6 +5,7 @@ import Layout from "../components/layout";
 import MainHeading from "../components/Headings/MainHeading";
 import Products from "../components/Products/Products";
 import BannerModal from "../components/Modals/BannerModal";
+import BackTop from "../components/Utilities/BackTop";
 
 const IndexPage = () => {
   const [modalShow, setModalShow] = useState(true);
@@ -28,6 +29,7 @@ const IndexPage = () => {
 
         <MainHeading />
         <Products />
+        <BackTop />
       </Layout>
     </>
   );

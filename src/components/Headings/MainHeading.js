@@ -1,8 +1,7 @@
 import React from "react";
-// import { useStaticQuery, graphql } from "gatsby";
 import Fade from "react-reveal/Fade";
 import { Col, Row, Button } from "react-bootstrap";
-import { Link as LinkScroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 import ImageMainHeading from "../Images/ImageMainHeading";
 import ImageSubHeading from "../Images/ImageSubHeading";
@@ -13,7 +12,7 @@ export const MainHeading = () => {
   const { description, sub_description } = useSiteMetaData();
 
   return (
-    <Fade left duration={1000} delay={500} distance="30px">
+    <Fade top duration={2000} delay={500}>
       <section>
         <ImageMainHeading>
           <Row
@@ -39,9 +38,9 @@ export const MainHeading = () => {
               <p className="company-description my-0 mb-4 text-center text-white">
                 {sub_description}
               </p>
-              <LinkScroll to="products" smooth duration={500}>
+              <Link to="products" smooth duration={500}>
                 <Button variant="primary">Shop Now</Button>
-              </LinkScroll>
+              </Link>
             </Col>
           </Row>
         </ImageMainHeading>

@@ -16,7 +16,7 @@ const Client = () => {
             name
             childImageSharp {
               id
-              fluid(maxWidth: 300, maxHeight: 400, quality: 100) {
+              fluid(maxWidth: 500, quality: 100) {
                 ...GatsbyImageSharpFluid
               }
             }
@@ -30,10 +30,7 @@ const Client = () => {
 
   return (
     <section className="client mt-5">
-      <h4 className="mb-3 text-center text-gold">
-        Satisfied Clients Nationwide
-      </h4>
-      <div className="client-container d-flex flex-wrap justify-content-center">
+      <div className="client-container">
         {clientImages.map(({ node }) => (
           <ClientImage key={node.id} image={node} />
         ))}

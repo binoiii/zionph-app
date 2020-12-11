@@ -12,7 +12,7 @@ const ClientImage = props => {
 
   return (
     <>
-      <button onClick={showModalClient}>
+      <button className="client-image-container" onClick={showModalClient}>
         <Img
           className="client-image"
           fluid={childImageSharp.fluid}

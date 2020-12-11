@@ -5,29 +5,30 @@
   }
 
   .client-container {
-    .client-image {
-      margin: 10px;
-      width: 300px;
-    }
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1.5rem;
 
     @media (max-width: 768px) {
-      .client-image {
-        max-width: 250px;
+      & {
+        grid-gap: 0.8rem;
       }
     }
 
     @media (max-width: 576px) {
-      .client-image {
-        margin: 3px;
-        max-width: 160px;
+      & {
+        grid-gap: 0.4rem;
       }
     }
 
     @media (max-width: 385px) {
-      .client-image {
-        margin: 1.5px;
-        max-width: 150px;
+      & {
+        grid-gap: 0.2rem;
       }
+    }
+
+    .client-image-container {
+      padding: 0;
     }
   }
 }

@@ -28,7 +28,7 @@ const Products = () => {
 
   const { products } = data.dataJson;
   return (
-    <section id="products">
+    <section id="products" className="pb-5">
       {products &&
         products.map((product, i) => (
           <Fade key={i} left duration={1000} delay={500} distance="30px">

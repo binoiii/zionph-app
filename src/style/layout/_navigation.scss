@@ -1,4 +1,37 @@
-.nav-link {
-  letter-spacing: 0.2rem;
-  font-weight: 400;
+.navbar {
+  .nav-link {
+    letter-spacing: 0.2rem;
+    font-weight: 400;
+  }
+}
+
+.back-to-top {
+  width: 100%;
+  position: relative;
+  top: 20px;
+
+  justify-content: center;
+
+  color: $primary;
+  font-size: 1.5rem;
+
+  animation: fadeIn 0.3s;
+  transition: opacity 0.4s;
+  opacity: 0.5;
+
+  z-index: 1000;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
 }

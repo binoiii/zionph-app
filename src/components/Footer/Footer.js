@@ -1,11 +1,12 @@
 import React from "react";
+
 import { Container, Row } from "react-bootstrap";
 import { IconContext } from "react-icons";
 import { FiFacebook, FiInstagram, FiTwitter } from "react-icons/fi";
 
 const Footer = () => (
-  <Container fluid="md">
-    <footer className="footer mt-5 d-flex flex-column align-items-center">
+  <Container className="mt-5" fluid="md">
+    <footer className="footer d-flex flex-column align-items-center">
       <Row>
         <h4 className="my-4 font-primary text-gold text-sm font-weight-medium letter-space-sm">
           Follow Us
