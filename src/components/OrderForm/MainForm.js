@@ -10,6 +10,8 @@ const MainForm = ({ product, price }) => {
     setState({ ...state, [e.target.name]: e.target.value });
   };
 
+  console.log(state);
+
   function encode(data) {
     return Object.keys(data)
       .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
@@ -41,6 +43,33 @@ const MainForm = ({ product, price }) => {
         onSubmit={handleSubmit}
       >
         <input type="hidden" name="form-name" value="order" />
+        <Form.Group>
+          <Form.Control
+            type="text"
+            name="product"
+            value={product}
+            onChange={handleChange}
+            hidden
+          />
+        </Form.Group>
+        <Form.Group>
+          <Form.Control
+            type="text"
+            name="price"
+            value={price}
+            onChange={handleChange}
+            hidden
+          />
+        </Form.Group>
+        <Form.Group>
+          <Form.Control
+            type="text"
+            placeholder="Complete Name"
+            name="client"
+            onChange={handleChange}
+            required
+          />
+        </Form.Group>
         <Form.Group>
           <Form.Control
             type="text"
