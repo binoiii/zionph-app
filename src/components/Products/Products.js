@@ -8,25 +8,26 @@ import Product from "./Product";
 const Products = () => {
   const data = useStaticQuery(graphql`
     query {
-      dataJson {
-        id
-        products {
-          product
-          originalPrice
-          price
-          productImage
-          productDetailImages
-          descriptions
-          reviews {
-            client
-            review
+      allDataJson {
+        nodes {
+          products {
+            product
+            originalPrice
+            price
+            productImage
+            productDetailImages
+            descriptions
+            reviews {
+              client
+              review
+            }
           }
         }
       }
     }
   `);
 
-  const { products } = data.dataJson;
+  const { products } = data.allDataJson.edges[0].node;
 
   return (
     <section id="products" className="pb-5">
