@@ -11,23 +11,18 @@ const ReviewCard = ({ review: { client, review } }) => {
       <Card.Body
         style={{ padding: "1.5rem 2.5rem 2.5rem 2.5rem", margin: "2rem 0" }}
       >
-        <Card.Title className="d-flex align-items-center">
-          <div className="review-card-profile">
+        <Card.Title className="d-flex flex-column justify-content-center align-items-center">
+          <div className="review-card-profile mb-3">
             <IconContext.Provider
               value={{ className: "review-card-profile-icon" }}
             >
               <BsPerson />
             </IconContext.Provider>
           </div>
-          <div className="ml-3 font-weight-heavy">
-            {client}
-            <span
-              className="d-block mt-1 text-primary"
-              style={{ marginLeft: "-2px" }}
-            >
-              <Star />
-            </span>
+          <div className="d-block text-primary mb-3">
+            <Star />
           </div>
+          <div className="font-weight-heavy">{client}</div>
         </Card.Title>
         <Card.Text className="mt-5 mb-3">{review}</Card.Text>
       </Card.Body>

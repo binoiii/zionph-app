@@ -1,3 +1,17 @@
+.benefits {
+  h5 {
+    text-transform: none;
+    color: $primary;
+  }
+
+  ul {
+    margin-bottom: 3rem;
+    ol {
+      padding: 0;
+    }
+  }
+}
+
 .client {
   h4 {
     font-family: $font-primary;
@@ -43,6 +57,7 @@
 
   p {
     margin-bottom: 2.5rem;
+    color: $dark-gray;
   }
 
   .contact-icons {

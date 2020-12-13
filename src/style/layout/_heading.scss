@@ -7,7 +7,7 @@
     text-shadow: 2.5px 2.5px 4px rgba(0, 0, 0, 0.4);
   }
 
-  .btn {
+  .btn.animate {
     text-shadow: 2.5px 2.5px 4px rgba(0, 0, 0, 0.4);
     box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.35);
     -webkit-animation-name: pop;
@@ -16,6 +16,10 @@
     animation-duration: 2s;
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
+  }
+
+  .btn-outline-light:hover {
+    color: $primary;
   }
 }
 
@@ -47,16 +51,34 @@
 
 .subheading {
   .subheading-desc-cont {
-    height: 150px;
-
+    height: 180px;
     .subheading-overlay {
-      height: 150px;
+      height: 100%;
       align-items: center;
       background-color: rgba(0, 0, 0, 0.2);
 
       p {
         width: 100%;
         text-shadow: 2.5px 2.5px 4px rgba(0, 0, 0, 0.4);
+        color: $white;
+      }
+    }
+  }
+  .subheading-content {
+    display: flex;
+    align-items: center;
+    border: 1px solid $gray;
+    min-height: 230px;
+
+    p {
+      margin-bottom: 0;
+      line-height: 1.6rem;
+    }
+
+    @media (max-width: 576px) {
+      p {
+        line-height: 1.5rem;
+        font-size: 1rem;
       }
     }
   }

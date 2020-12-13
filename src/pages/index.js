@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import SEO from "../components/seo";
 import Layout from "../components/layout";
 import MainHeading from "../components/Headings/MainHeading";
+import Icons from "../components/Sections/Icons";
 import Products from "../components/Products/Products";
 import BannerModal from "../components/Modals/BannerModal";
 import BackTop from "../components/Utilities/BackTop";
@@ -26,8 +27,8 @@ const IndexPage = () => {
       />
       <Layout>
         <SEO title="Home" />
-
         <MainHeading />
+        <Icons />
         <Products />
         <BackTop />
       </Layout>

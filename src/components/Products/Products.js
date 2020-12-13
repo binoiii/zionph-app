@@ -27,6 +27,7 @@ const Products = () => {
   `);
 
   const { products } = data.dataJson;
+
   return (
     <section id="products" className="pb-5">
       {products &&

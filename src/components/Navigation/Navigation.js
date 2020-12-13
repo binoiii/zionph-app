@@ -27,6 +27,11 @@ const Navigation = ({ siteTitle }) => (
               </Nav.Link>
             </NavItem>
             <NavItem>
+              <Nav.Link as={Link} activeClassName="active" to="/benefits">
+                Health Benefits
+              </Nav.Link>
+            </NavItem>
+            <NavItem>
               <Nav.Link as={Link} activeClassName="active" to="/clients">
                 Clients
               </Nav.Link>

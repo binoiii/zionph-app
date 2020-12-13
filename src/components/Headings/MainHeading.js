@@ -1,7 +1,8 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
 import { Col, Row, Button } from "react-bootstrap";
-import { Link } from "react-scroll";
+import { Link } from "gatsby";
+import { Link as ScrollLink } from "react-scroll";
 
 import ImageMainHeading from "../Images/ImageMainHeading";
 import ImageSubHeading from "../Images/ImageSubHeading";
@@ -10,7 +11,6 @@ import useSiteMetaData from "../useSiteMetaData";
 
 export const MainHeading = () => {
   const { description, sub_description } = useSiteMetaData();
-
   return (
     <Fade top duration={2000} delay={500}>
       <section>
@@ -38,9 +38,14 @@ export const MainHeading = () => {
               <p className="company-description my-0 mb-4 text-center text-white">
                 {sub_description}
               </p>
-              <Link to="products" smooth duration={500}>
-                <Button variant="primary">Shop Now</Button>
+              <Link to="benefits" duration={500}>
+                <Button variant="outline-light">See Health Benefits</Button>
               </Link>
+              <ScrollLink to="products" duration={500} className="mt-3">
+                <Button variant="primary" className="animate">
+                  Shop Now
+                </Button>
+              </ScrollLink>
             </Col>
           </Row>
         </ImageMainHeading>

@@ -10,7 +10,6 @@ export const ImageMainHeading = ({ children }) => {
         childImageSharp {
           fluid(maxWidth: 1080, quality: 100) {
             ...GatsbyImageSharpFluid
-            ...GatsbyImageSharpFluidLimitPresentationSize
           }
         }
       }
@@ -18,7 +17,6 @@ export const ImageMainHeading = ({ children }) => {
         childImageSharp {
           fluid(maxWidth: 768, quality: 100) {
             ...GatsbyImageSharpFluid
-            ...GatsbyImageSharpFluidLimitPresentationSize
           }
         }
       }
@@ -26,7 +24,6 @@ export const ImageMainHeading = ({ children }) => {
         childImageSharp {
           fluid(maxWidth: 5676, quality: 100) {
             ...GatsbyImageSharpFluid
-            ...GatsbyImageSharpFluidLimitPresentationSize
           }
         }
       }
