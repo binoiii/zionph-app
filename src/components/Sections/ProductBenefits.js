@@ -14,7 +14,7 @@ const ProductBenefits = () => {
       </Row>
       <Row>
         <Col sm={8}>
-          <ul>
+          <ul className="pl-0 pl-md-5">
             <ol>1. Reduce stress, tension, and anxiety</ol>
             <ol>2. Relax and loosen sore muscles</ol>
             <ol>3. Improve blood flow</ol>
