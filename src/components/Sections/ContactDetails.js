@@ -16,7 +16,10 @@ const ContactDetails = () => (
             <GoLocation />
             Main Office
           </h4>
-          <p>2401 Taft Ave, Malate, Manila, 1004 Metro Manila</p>
+          <p>
+            Blk 5 Lot 3 Chinaberry St. Malanday, 1444 Valenzuela City,
+            Philippines City
+          </p>
         </Col>
       </Row>
       <Row>
@@ -25,7 +28,7 @@ const ContactDetails = () => (
             <FiPhone />
             Phone
           </h4>
-          <p>Main Office: (02) 8888 8888</p>
+          <p>Main Office: (+63) 9178948913</p>
         </Col>
       </Row>
       <Row>
@@ -34,7 +37,7 @@ const ContactDetails = () => (
             <BsClock />
             Opening Hours
           </h4>
-          <p>Monday to Friday: 9:00 AM - 5:00 PM</p>
+          <p>Monday to Friday: 8:00 AM - 5:00 PM</p>
         </Col>
       </Row>
       <Row>
@@ -43,7 +46,7 @@ const ContactDetails = () => (
             <AiOutlineMail />
             Email
           </h4>
-          <p className="mb-0">dummy-email@gmail.com</p>
+          <p className="mb-0">zionph1020@gmail.com</p>
         </Col>
       </Row>
     </IconContext.Provider>

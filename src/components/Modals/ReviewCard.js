@@ -24,7 +24,7 @@ const ReviewCard = ({ review: { client, review } }) => {
           </div>
           <div className="font-weight-heavy">{client}</div>
         </Card.Title>
-        <Card.Text className="mt-5 mb-3">{review}</Card.Text>
+        <Card.Text className="mt-5 mb-3 text-center">{review}</Card.Text>
       </Card.Body>
     </Card>
   );

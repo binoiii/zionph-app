@@ -27,12 +27,16 @@
       ],
       "reviews": [
         {
-          "client": "Client1",
-          "review": "ClientReview1"
+          "client": "Jana A.",
+          "review": "“I purchased Zion Deluxe last August, and until now it’s like newly bought. All functions are working with high quality leather and functions. Thank you Zion Philippines!”"
         },
         {
-          "client": "Client2",
-          "review": "ClientReview2"
+          "client": "Mark D.",
+          "review": "“Buying from this company is the best decision I’ve made this year. Customer support is very hands on in providing every detail I need. Kudos!”"
+        },
+        {
+          "client": "Jasper O.",
+          "review": "“Zion Deluxe is the best gift I gave to my parents. They are happy with the purchase. Affordable, yet high quality.”"
         }
       ]
     },
@@ -63,12 +67,16 @@
       ],
       "reviews": [
         {
-          "client": "Client1",
-          "review": "ClientReview1"
+          "client": "Katherine A.",
+          "review": "“I love Zion Premier! 100% worth buy. Been using it for 5 months now, still, no damage.”"
         },
         {
-          "client": "Client2",
-          "review": "ClientReview2"
+          "client": "Vincent O.",
+          "review": "“I love the customer service support of Zion Massage Chair, they are replying every minute. They offer Cash on Delivery which is very convenient to all the buyers.”"
+        },
+        {
+          "client": "Cassy K.",
+          "review": "“I am very thankful to Justine, my Demonstrator for doing great in explaining the questions I have during her demo. Very high quality for a very affordable price.”"
         }
       ]
     },
@@ -113,12 +121,16 @@
       ],
       "reviews": [
         {
-          "client": "Client1",
-          "review": "ClientReview1"
+          "client": "Valerie B.",
+          "review": "“6 months since we purchased Zion Prestige, and my family loves every minute of it. Very worth it, best investment ever!”"
         },
         {
-          "client": "Client2",
-          "review": "ClientReview2"
+          "client": "Fatima D.",
+          "review": "“Good job to delivery team, demonstrator, customer support, even the sales agent. Very smooth transaction with you guys. Thank you!”"
+        },
+        {
+          "client": "Klein F.",
+          "review": "“This is the best purchase I had this year.”"
         }
       ]
     },
@@ -148,12 +160,16 @@
       ],
       "reviews": [
         {
-          "client": "Client1",
-          "review": "ClientReview1"
+          "client": "Justine M.",
+          "review": "“As a businessman, the real reason why I purchased Zion Executive is to rest after a long day of work. From this, I can say that 100k worth of this kind of chair is more than enough than availing in the mall.”"
         },
         {
-          "client": "Client2",
-          "review": "ClientReview2"
+          "client": "Zia C.",
+          "review": "“After working in the hospital, my favorite place is my Zion Executive. Definitely worth it, it’s like the one in the mall which costs around 250k. Lol! Buying from this company was the best decision I’ve made.”"
+        },
+        {
+          "client": "Vanessa C.",
+          "review": "“My sales representative is very kind. Good transaction with this team. I love every minute spend with my Zion Executive.”"
         }
       ]
     }

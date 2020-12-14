@@ -15,7 +15,7 @@ const Footer = () => (
       <Row className="pb-4">
         <IconContext.Provider value={{ classname: "social-links" }}>
           <a
-            href="www.fb.com"
+            href="https://www.facebook.com/zionphilippines2020"
             rel="noopener noreferrer"
             target="_blank"
             aria-label="facebook"
@@ -24,7 +24,7 @@ const Footer = () => (
             <FiFacebook />
           </a>
           <a
-            href="www.instagram.com"
+            href="https://www.instagram.com/zion_philippines/"
             rel="noopener noreferrer"
             target="_blank"
             aria-label="instagram"
@@ -32,7 +32,7 @@ const Footer = () => (
           >
             <FiInstagram />
           </a>
-          <a
+          {/* <a
             href="www.twitter.com"
             rel="noopener noreferrer"
             target="_blank"
@@ -40,7 +40,7 @@ const Footer = () => (
             className="social-links"
           >
             <FiTwitter />
-          </a>
+          </a> */}
         </IconContext.Provider>
       </Row>
       <hr />

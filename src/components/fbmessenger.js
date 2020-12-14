@@ -1,13 +1,11 @@
 import React, { useEffect } from "react";
 
-// const facebookAppId = "<PAGE_ID>";
-
 const MessengerChat = () => {
   useEffect(() => {
     window.fbAsyncInit = function() {
       window.FB.init({
         xfbml: true,
-        version: "v8.0",
+        version: "v9.0",
       });
     };
     (function(d, s, id) {
@@ -25,11 +23,11 @@ const MessengerChat = () => {
       <div id="fb-root" />
       <div
         className="fb-customerchat"
-        attribution="setup_tool"
-        logged_in_greeting="Welcome to Zion Philippines. Drop your questions and we will get back to you the soonest."
+        attribution="install_email"
+        page_id="300857950340881"
+        logged_in_greeting="Hi! Thank you for reaching Zion Philippines. Message us for inquiries."
         logged_out_greeting="Thank you for visiting Zion Philippines!"
         theme_color="#d1a636"
-        page_id="303146620547418"
       />
     </>
   );
