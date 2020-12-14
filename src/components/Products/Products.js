@@ -27,7 +27,9 @@ const Products = () => {
     }
   `);
 
-  const { products } = data.allDataJson.nodes[1];
+  const { products } = data.allDataJson.nodes[2];
+
+  console.log(products);
 
   return (
     <section id="products" className="pb-5">

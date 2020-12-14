@@ -45,6 +45,19 @@
   }
 }
 
+//Prestige
+.modal-supreme {
+  .carousel-indicators {
+    li {
+      background-color: $supreme !important;
+    }
+  }
+
+  .prev-next-supreme {
+    color: $supreme;
+  }
+}
+
 //Executive
 .modal-executive {
   .carousel-indicators {

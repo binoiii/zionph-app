@@ -17,8 +17,8 @@ const ContactDetails = () => (
             Main Office
           </h4>
           <p>
-            Blk 5 Lot 3 Chinaberry St. Malanday, 1444 Valenzuela City,
-            Philippines City
+            Blk 5 Lot 3 Chinaberry St. ITC Woodlands, Malanday Valenzuela City
+            1444
           </p>
         </Col>
       </Row>

@@ -3,7 +3,7 @@
     {
       "product": "deluxe",
       "originalPrice": "111,998",
-      "price": "59,999",
+      "price": "55,999",
       "productImage": "deluxe-shadow.png",
       "productDetailImages": [
         "deluxe-description1.jpg",
@@ -27,8 +27,8 @@
       ],
       "reviews": [
         {
-          "client": "Jana A.",
-          "review": "“I purchased Zion Deluxe last August, and until now it’s like newly bought. All functions are working with high quality leather and functions. Thank you Zion Philippines!”"
+          "client": "Jana A. ",
+          "review": "“I purchased Zion Deluxe last August, and until now it’s like newly bought. All functions are working with high quality leather and functions. Thank you Zion Philippines!” "
         },
         {
           "client": "Mark D.",
@@ -37,6 +37,34 @@
         {
           "client": "Jasper O.",
           "review": "“Zion Deluxe is the best gift I gave to my parents. They are happy with the purchase. Affordable, yet high quality.”"
+        },
+        {
+          "client": "Vincent O.",
+          "review": "“I love the customer service support of Zion Massage Chair, they are replying every minute. They offer Cash on Delivery which is very convenient to all the buyers.”"
+        },
+        {
+          "client": "Cassy K.",
+          "review": "“I am very thankful to Justine, my Demonstrator for doing great in explaining the questions I have during her demo. Very high quality for a very affordable price.”"
+        },
+        {
+          "client": "Fatima D.",
+          "review": "“Good job to delivery team, demonstrator, customer support, even the sales agent. Very smooth transaction with you guys. Thank you!” "
+        },
+        {
+          "client": "George S.",
+          "review": "“5 star! High quality massage chair!”"
+        },
+        {
+          "client": "Klein F",
+          "review": "“This is the best purchase I had this year.”"
+        },
+        {
+          "client": "Ben R.",
+          "review": ""
+        },
+        {
+          "client": "Leo P.",
+          "review": ""
         }
       ]
     },
@@ -71,12 +99,104 @@
           "review": "“I love Zion Premier! 100% worth buy. Been using it for 5 months now, still, no damage.”"
         },
         {
-          "client": "Vincent O.",
-          "review": "“I love the customer service support of Zion Massage Chair, they are replying every minute. They offer Cash on Delivery which is very convenient to all the buyers.”"
+          "client": "Haley B.",
+          "review": ""
         },
         {
-          "client": "Cassy K.",
-          "review": "“I am very thankful to Justine, my Demonstrator for doing great in explaining the questions I have during her demo. Very high quality for a very affordable price.”"
+          "client": "Marian M.",
+          "review": ""
+        },
+        {
+          "client": "Allyssa S.",
+          "review": "“Highly recommended shop for massage chairs! Best quality for its affordable price.”"
+        },
+        {
+          "client": "Daryl R.",
+          "review": "“Great shopping experience and great chair. Gonna consider it as my favorite relaxing spot after a tiring day from work.”"
+        },
+        {
+          "client": "Jayvee L.",
+          "review": "“I like Zion Premier a lot. The design looks so expensive but it's not. Great purchase for myself!”"
+        },
+        {
+          "client": "Rafael B.",
+          "review": "“Been using the product everyday for almost 2 months and it still looks brand new. I sometimes fall asleep in it hahaha that's how comfortable the Premier is!”"
+        },
+        {
+          "client": "Angelo K.",
+          "review": "“Excellent customer service, great quality, smooth delivery service. I could say that overall when it comes to Zion Philippines was awesome!”"
+        },
+        {
+          "client": "Christian F.",
+          "review": "“Best massage chair ever! I'm very well satisfied with the chair's features and design. I didn't regret buying Zion Premier. I'll recommended this to my friends. Excellent experience with Zion Philippines!”"
+        },
+        {
+          "client": "Melvin B.",
+          "review": ""
+        }
+      ]
+    },
+    {
+      "product": "supreme",
+      "originalPrice": "149,888",
+      "price": "69,999",
+      "productImage": "supreme-shadow.png",
+      "productDetailImages": [
+        "supreme-description1.jpg",
+        "supreme-description2.jpg",
+        "supreme-a.jpg",
+        "supreme-b.jpg",
+        "supreme-c.jpg",
+        "supreme-d.jpg",
+        "supreme-e.jpg",
+        "supreme-f.jpg",
+        "supreme-g.jpg"
+      ],
+      "descriptions": [
+        "Core for more Intelligent",
+        "8D Jade Massage Roller",
+        "Zero Gravity Capsule"
+      ],
+      "reviews": [
+        {
+          "client": "Rina G.",
+          "review": "“I’m so lucky I was able to purchase their limited edition Zion Supreme. Very elegant and worth the wait. Made with high quality leather.”"
+        },
+        {
+          "client": "Dante F.",
+          "review": "“I made a right decision for availing Supreme rather than the one in the mall. Same features, massage from head to foot is it!”"
+        },
+        {
+          "client": "Romel Y.",
+          "review": "“Zion Supreme is the best gift I gave to my wife during our Anniversary. They said 20 days waiting time but it arrived earlier than expected. Thank you, Zion Philippines!”"
+        },
+        {
+          "client": "Gerald C.",
+          "review": "“Brand new, sealed, good demonstration, features are all working as expected. Loving my Zion Supreme for 3 months now.”"
+        },
+        {
+          "client": "Ella S.",
+          "review": "“I found Zion Massage Chair while browsing through FB and all I can say is WOW. From transaction, to customer support, to free eye massager and free demo. Kudos team!”"
+        },
+        {
+          "client": "Diana B.",
+          "review": "“If you are thinking about buying Zion Supreme, don't think anymore, just buy it! You won't regret buying. Affordable and high quality indeed!“"
+        },
+        {
+          "client": "Paul B.",
+          "review": "“After lots of searching, I decided to buy my massage chair from Zion Philippines. Swear, this is the best gift I bought for myself this year. Zion Supreme is my partner when it comes to relaxation!”"
+        },
+        {
+          "client": "John S.",
+          "review": "“This was absolutely the best shop for massage chairs. Smooth transaction with the sales agent, high quality product and it is unbelievably affordable!”"
+        },
+        {
+          "client": "Christian A.",
+          "review": "“I didn't expect that my order, Zion Supreme, will shipped after a few days of transaction with them. Satisfied customer here!”"
+        },
+        {
+          "client": "Jeanine S.",
+          "review": "“I am highly impressed by the Zion's concern about their client's satisfaction. Massage chair works great for its affordable price.”"
         }
       ]
     },
@@ -125,12 +245,40 @@
           "review": "“6 months since we purchased Zion Prestige, and my family loves every minute of it. Very worth it, best investment ever!”"
         },
         {
-          "client": "Fatima D.",
-          "review": "“Good job to delivery team, demonstrator, customer support, even the sales agent. Very smooth transaction with you guys. Thank you!”"
+          "client": "Vanessa C.",
+          "review": "“My sales representative is very kind. Good transaction with this team. I love every minute spend with my Zion Prestige.”"
         },
         {
-          "client": "Klein F.",
-          "review": "“This is the best purchase I had this year.”"
+          "client": "Fatty R.",
+          "review": "“Worth every penny! My lola really loves it, she even falls asleep with her Zion Prestige. Very comfortable. Thank you Zion.”"
+        },
+        {
+          "client": "Joshua H.",
+          "review": "“I love the way how their customer support discusses all the details regarding the chairs. I have purchased Zion Prestige and I can say that this is totally worth it.”"
+        },
+        {
+          "client": "Teresa G.",
+          "review": "“Prestige is like the one in the mall which costs 160k up. Thankful I found Zion. It’s true! Quality and affordable.”"
+        },
+        {
+          "client": "Vincent T.",
+          "review": "“Thank you Elena, my sales representative for discussing all the functions of my Zion Prestige. Very bulky which fits my brother who is 110kg.”"
+        },
+        {
+          "client": "Cathy L.",
+          "review": "“I feel like I am in spaceship for availing Zion Prestige in Gold. Haha! Very elegant and classy.”"
+        },
+        {
+          "client": "Xyra B.",
+          "review": "“Kudos to Zion Logistics team! My Zion Prestige arrived in a very good condition, brand new and sealed.”"
+        },
+        {
+          "client": "Earl A.",
+          "review": "“This is my second time to order Zion Prestige and they never failed to exceed my expectations! The chairs are as good as their customer supports are.”"
+        },
+        {
+          "client": "Jean B.",
+          "review": "“I highly recommended Zion Prestige for great massage chairs! Great product with almost all features needed for relaxation.”"
         }
       ]
     },
@@ -168,8 +316,36 @@
           "review": "“After working in the hospital, my favorite place is my Zion Executive. Definitely worth it, it’s like the one in the mall which costs around 250k. Lol! Buying from this company was the best decision I’ve made.”"
         },
         {
-          "client": "Vanessa C.",
-          "review": "“My sales representative is very kind. Good transaction with this team. I love every minute spend with my Zion Executive.”"
+          "client": "Patrick D.",
+          "review": "“Hassle-free transaction with Zion Philippines. Good quality and a great investment I consider for myself. Thanks to the team!”"
+        },
+        {
+          "client": "Wilson S.",
+          "review": "“I bought Zion Executive for my mom and no wonder why she loves it a lot. I'm glad to see her enjoying in relaxation after her work. Great product!”"
+        },
+        {
+          "client": "Rose E.",
+          "review": "“Zion Executive is sooo stylish! I love the design, features and all. Just bought it yesterday and it is absolutely worth the money. I will sure recommend this to my friends. Thanks a lot!”"
+        },
+        {
+          "client": "Sunshine D.",
+          "review": "“I bought my husband a gift, the Zion Executive one. He loves it a lot. Going straight ahead to the chair after going home from his work. I also love the free eye massager!”"
+        },
+        {
+          "client": "Heart C.",
+          "review": ""
+        },
+        {
+          "client": "Aaron B.",
+          "review": ""
+        },
+        {
+          "client": "Neil G.",
+          "review": "“Trouble-free process when it comes to transaction up to its delivery process. Too great for its super affordable price compare to those chairs at the mall.”"
+        },
+        {
+          "client": "Kyle B.",
+          "review": "“Never expected to receive this kind of massage chair that I bought online. Quick delivery and the chair arrives in perfect condition, as classy as what I've seen on their posted pictures. What you see is what you get, indeed!”"
         }
       ]
     }

@@ -5,15 +5,15 @@ import Layout from "../../components/layout";
 import SEO from "../../components/seo";
 import OrderForm from "../../components/OrderForm/OrderForm";
 
-const prestige = () => {
+const Prestige = () => {
   return (
     <Layout>
       <SEO title="Order Form" />
       <Fade left duration={1000} distance="30px">
-        <OrderForm product="prestige" price="79,999" />
+        <OrderForm product="Prestige" price="79,999" />
       </Fade>
     </Layout>
   );
 };
 
-export default prestige;
+export default Prestige;
