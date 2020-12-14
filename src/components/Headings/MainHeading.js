@@ -41,7 +41,7 @@ export const MainHeading = () => {
               <Link to="benefits" duration={500}>
                 <Button variant="outline-light">See Health Benefits</Button>
               </Link>
-              <ScrollLink to="products" duration={500} className="mt-3">
+              <ScrollLink to="products" smooth duration={500} className="mt-3">
                 <Button variant="primary" className="animate">
                   Shop Now
                 </Button>
