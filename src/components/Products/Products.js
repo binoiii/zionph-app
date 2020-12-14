@@ -27,7 +27,7 @@ const Products = () => {
     }
   `);
 
-  const { products } = data.allDataJson.nodes[2];
+  const { products } = data.allDataJson.nodes[1];
 
   console.log(products);
 
