@@ -2,7 +2,7 @@ import React from "react";
 
 import { Container, Row } from "react-bootstrap";
 import { IconContext } from "react-icons";
-import { FiFacebook, FiInstagram, FiTwitter } from "react-icons/fi";
+import { FiFacebook, FiInstagram } from "react-icons/fi";
 
 const Footer = () => (
   <Container className="mt-5" fluid="md">
