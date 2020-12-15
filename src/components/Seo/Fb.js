@@ -2,7 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import PropTypes from "prop-types";
 
-const Fb = ({ title, description, image, alt }) => (
+const Fb = ({ url, title, description, image, alt }) => (
   <Helmet>
     <meta property="og:type" content="website" />
     <meta property="og:url" content={url} />
