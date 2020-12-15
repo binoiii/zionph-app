@@ -4,6 +4,7 @@ import Helmet from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 
 import Fb from "./Fb";
+import Twitter from "./Twitter";
 
 function SEO({ title, lang }) {
   const { site } = useStaticQuery(
@@ -53,6 +54,12 @@ function SEO({ title, lang }) {
         <meta name="image" content={seo.image} />
       </Helmet>
       <Fb
+        url={seo.url}
+        title={seo.title}
+        description={seo.description}
+        image={seo.image}
+      />
+      <Twitter
         url={seo.url}
         title={seo.title}
         description={seo.description}
