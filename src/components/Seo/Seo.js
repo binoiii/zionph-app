@@ -50,7 +50,6 @@ function SEO({ title, lang }) {
       >
         <meta name="description" content={seo.description} />
         <meta name="image" content={seo.image} />
-        <meta property="og:image" content={seo.image} />
       </Helmet>
       <Fb title={seo.title} description={seo.description} image={seo.image} />
     </>
