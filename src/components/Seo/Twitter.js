@@ -2,7 +2,7 @@ import React from "react";
 import Helmet from "react-helmet";
 import PropTypes from "prop-types";
 
-const Twitter = ({ url, title, description, images }) => {
+const Twitter = ({ url, title, description, image }) => {
   return (
     <>
       <Helmet>
