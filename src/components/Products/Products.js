@@ -15,6 +15,7 @@ const Products = () => {
             originalPrice
             price
             productImage
+            productDetailImages
             reviews {
               client
               review

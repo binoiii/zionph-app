@@ -6,7 +6,6 @@ import ImageDetail from "../Images/ImageDetails";
 
 const DetailsModal = props => {
   const { product, images } = props;
-
   return (
     <Modal
       className={`modal-${product} testing`}

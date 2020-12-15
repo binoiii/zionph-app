@@ -19,8 +19,8 @@ const Twitter = ({ url, title, description, image }) => {
 export default Twitter;
 
 Twitter.propTypes = {
-  url: PropTypes.string.isRequire,
-  tittle: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
   description: PropTypes.string,
   image: PropTypes.string.isRequired,
 };
