@@ -15,21 +15,18 @@ const Products = () => {
             originalPrice
             price
             productImage
-            productDetailImages
-            descriptions
             reviews {
               client
               review
             }
+            descriptions
           }
         }
       }
     }
   `);
 
-  const { products } = data.allDataJson.nodes[1];
-
-  console.log(products);
+  const { products } = data.allDataJson.nodes[0];
 
   return (
     <section id="products" className="pb-5">
