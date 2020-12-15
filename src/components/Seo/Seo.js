@@ -39,9 +39,6 @@ function SEO({ title, lang }) {
     image: `${url}${image}`,
     author,
   };
-
-  console.log(seo.image);
-
   return (
     <>
       <Helmet
