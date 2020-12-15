@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import SEO from "../components/seo";
+import SEO from "../components/Seo/Seo";
 import Layout from "../components/layout";
 import MainHeading from "../components/Headings/MainHeading";
 import Icons from "../components/Sections/Icons";

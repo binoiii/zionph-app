@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 import Fade from "react-reveal/Fade";
 
 import Layout from "../components/layout";
-import SEO from "../components/seo";
+import SEO from "../components/Seo/Seo";
 
 const ThankYou = () => (
   <Layout>
