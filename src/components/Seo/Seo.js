@@ -33,6 +33,7 @@ function SEO({ title, lang }) {
   } = site.siteMetadata;
 
   const seo = {
+    url,
     title: title || defaultTitle,
     titleTemplate: `%s | ${defaultTitle}`,
     description: `${description} | ${sub_description}`,
@@ -51,7 +52,12 @@ function SEO({ title, lang }) {
         <meta name="description" content={seo.description} />
         <meta name="image" content={seo.image} />
       </Helmet>
-      <Fb title={seo.title} description={seo.description} image={seo.image} />
+      <Fb
+        url={seo.url}
+        title={seo.title}
+        description={seo.description}
+        image={seo.image}
+      />
     </>
   );
 }
