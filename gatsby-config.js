@@ -28,7 +28,7 @@ module.exports = {
         background_color: `#D19E31`,
         theme_color: `#D19E31`,
         display: `minimal-ui`,
-        icon: `src/images/zion-icon.jpg`, // This path is relative to the root of the site.
+        icon: `src/images/zion-icon.png`, // This path is relative to the root of the site.
       },
     },
     {
