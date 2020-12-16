@@ -10,7 +10,7 @@ import { AiOutlineMail } from "react-icons/ai";
 const ContactDetails = () => (
   <section className="contact mt-5 text-center">
     <IconContext.Provider value={{ className: "contact-icons" }}>
-      <Row>
+      {/* <Row>
         <Col>
           <h4>
             <GoLocation />
@@ -21,7 +21,7 @@ const ContactDetails = () => (
             1444
           </p>
         </Col>
-      </Row>
+      </Row> */}
       <Row>
         <Col>
           <h4>
