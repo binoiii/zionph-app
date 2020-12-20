@@ -46,7 +46,7 @@ const ContactDetails = () => (
             <AiOutlineMail />
             Email
           </h4>
-          <p className="mb-0">zionph1020@gmail.com</p>
+          <p className="mb-0">philippines.zion@gmail.com</p>
         </Col>
       </Row>
     </IconContext.Provider>
