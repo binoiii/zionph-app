@@ -24,7 +24,7 @@ const Footer = () => (
             <FiFacebook />
           </a>
           <a
-            href="https://www.instagram.com/zion_philippines/"
+            href="https://www.instagram.com/zion_philippines"
             rel="noopener noreferrer"
             target="_blank"
             aria-label="instagram"

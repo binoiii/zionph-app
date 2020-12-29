@@ -22,7 +22,7 @@ const ContactDetails = () => (
           </p>
         </Col>
       </Row> */}
-      <Row>
+      {/* <Row>
         <Col>
           <h4>
             <FiPhone />
@@ -30,7 +30,7 @@ const ContactDetails = () => (
           </h4>
           <p>Main Office: (+63) 9178948913</p>
         </Col>
-      </Row>
+      </Row> */}
       <Row>
         <Col>
           <h4>
