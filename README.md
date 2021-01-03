@@ -1,4 +1,4 @@
-# Official Repository of Zion Philippines Web Application
+# Official Repository of Zion Philippines
 
 Live Link: https://zion-ph.com
 
