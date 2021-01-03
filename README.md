@@ -1,4 +1,4 @@
-# Official Website of Zion Philippines
+# Official of Zion Philippines Web Application
 
 Live Link: https://zion-ph.com
 
