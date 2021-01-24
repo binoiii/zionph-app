@@ -4,9 +4,9 @@ module.exports = {
     description: `Everybody's soothing haven`,
     sub_description: `Bringing you the most affordable, yet highest quality massage
     chairs and furnitures in the market`,
+    author: `@bino.third`,
     url: `https://zion-ph.com`,
     image: `/images/zion-icon.jpg`,
-    author: `@bino.third`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

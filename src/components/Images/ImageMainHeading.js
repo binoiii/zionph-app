@@ -22,7 +22,7 @@ export const ImageMainHeading = ({ children }) => {
       }
       homeImageSm: file(relativePath: { eq: "bg-livingroom-sm.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 5676, quality: 100) {
+          fluid(maxWidth: 576, quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }
