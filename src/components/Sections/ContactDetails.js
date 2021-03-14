@@ -2,8 +2,8 @@ import React from "react";
 import { IconContext } from "react-icons";
 import { Col, Row } from "react-bootstrap";
 
-import { GoLocation } from "react-icons/go";
-import { FiPhone } from "react-icons/fi";
+// import { GoLocation } from "react-icons/go";
+// import { FiPhone } from "react-icons/fi";
 import { BsClock } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
 
