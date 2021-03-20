@@ -39,43 +39,55 @@ const Product = ({
           <span className="text-primary">zion</span>
           {product}
         </h1>
-        <span className="text-danger">
-          <small
-            className="text-gray mr-1"
-            style={{ textDecoration: "line-through" }}
-          >
-            &#8369; {originalPrice}
-          </small>
-          &#8369; {price}
-        </span>
-        <button className="view-products text-xs" onClick={showReviewDetails}>
-          View Product Reviews
-        </button>
+        {originalPrice && price && (
+          <span className="text-danger">
+            <small
+              className="text-gray mr-1"
+              style={{ textDecoration: "line-through" }}
+            >
+              &#8369; {originalPrice}
+            </small>
+            &#8369; {price}
+          </span>
+        )}
+        {reviews && (
+          <button className="view-products text-xs" onClick={showReviewDetails}>
+            View Product Reviews
+          </button>
+        )}
         <div className="product-description my-3 my-md-4 my-lg-5 text-right">
           {descriptions &&
             descriptions.map((description, i) => <p key={i}>{description}</p>)}
         </div>
-        <Button
-          variant="outline-secondary"
-          style={{ padding: "10px 20.845px" }}
-          onClick={showModalDetails}
-        >
-          More Details
-        </Button>
-        <Button className="mt-2" as={Link} to={`/order/${product}/`}>
-          Order Now
-        </Button>
-        <ReviewModal
-          show={modalReviewShow}
-          onHide={closeReviewDetails}
-          reviews={reviews}
-        />
-        <DetailsModal
-          show={modalDetailsShow}
-          onHide={closeModalDetails}
-          product={product}
-          images={productDetailImages}
-        />
+        {price && (
+          <Button
+            variant="outline-secondary"
+            style={{ padding: "10px 20.845px" }}
+            onClick={showModalDetails}
+          >
+            More Details
+          </Button>
+        )}
+        {price && (
+          <Button className="mt-2" as={Link} to={`/order/${product}/`}>
+            Order Now
+          </Button>
+        )}
+        {reviews && (
+          <ReviewModal
+            show={modalReviewShow}
+            onHide={closeReviewDetails}
+            reviews={reviews}
+          />
+        )}
+        {productDetailImages && (
+          <DetailsModal
+            show={modalDetailsShow}
+            onHide={closeModalDetails}
+            product={product}
+            images={productDetailImages}
+          />
+        )}
       </Col>
     </Row>
   );

@@ -5,9 +5,9 @@ import Img from "gatsby-image";
 const ImageBanner = () => {
   const data = useStaticQuery(graphql`
     query {
-      imageBannerPlaceHolder: file(relativePath: { eq: "banner.jpg" }) {
+      imageBannerPlaceHolder: file(relativePath: { eq: "zion-carbon.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 800, quality: 100) {
+          fluid(maxWidth: 700, quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }

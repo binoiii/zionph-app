@@ -1,6 +1,15 @@
 {
   "products": [
     {
+      "product": "carbon",
+      "productImage": "zion-carbon.jpg",
+      "descriptions": [
+        "100% Chemical-free, toxic-free and fragrance-free",
+        "Absorbs odors, bacteria, harmful pollutants and allergens",
+        "Dehumidifies to prevent mold and excess moisture"
+      ]
+    },
+    {
       "product": "deluxe",
       "originalPrice": "111,998",
       "price": "55,999",
