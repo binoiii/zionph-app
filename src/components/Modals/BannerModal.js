@@ -5,12 +5,7 @@ import ImageBanner from "../Images/ImageBanner";
 
 const BannerModal = props => {
   return (
-    <Modal
-      {...props}
-      size="md"
-      aria-labelledby="contained-modal-title-vcenter"
-      centered
-    >
+    <Modal {...props} aria-labelledby="contained-modal-title-vcenter" centered>
       <Modal.Header closeButton>
         <Modal.Title></Modal.Title>
       </Modal.Header>
