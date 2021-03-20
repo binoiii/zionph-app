@@ -23,7 +23,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Zion Philippines`,
-        short_name: `zion`,
+        short_name: `zionph`,
         start_url: `/`,
         background_color: `#D19E31`,
         theme_color: `#D19E31`,
