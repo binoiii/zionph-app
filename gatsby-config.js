@@ -22,8 +22,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `zionph-app`,
-        short_name: `starter`,
+        name: `Zion Philippines`,
+        short_name: `zion`,
         start_url: `/`,
         background_color: `#D19E31`,
         theme_color: `#D19E31`,
