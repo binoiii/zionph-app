@@ -15,7 +15,7 @@ const OrderForm = ({ product, price }) => {
                 <span className="text-gold">ZION</span>
                 <span>{product}</span>
               </h4>
-              <p className="text-danger">{`₱ ${price} - 50% Limited Time Offer`}</p>
+              <p className="text-danger">{`₱ ${price} - 60% Limited Time Offer`}</p>
               <p>
                 Please fill out the form to reserve your unit. Upon submitting
                 this form, strictly{" "}

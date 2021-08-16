@@ -10,34 +10,25 @@
       ]
     },
     {
-      "product": "deluxe",
-      "originalPrice": "111,998",
-      "price": "55,999",
-      "productImage": "deluxe-shadow.png",
+      "product": "recliner",
+      "originalPrice": "39,997.50",
+      "price": "15,999",
+      "productImage": "recliner-shadow.png",
       "productDetailImages": [
-        "deluxe-description1.jpg",
-        "deluxe-description2.jpg",
-        "deluxe-a.jpg",
-        "deluxe-b.jpg",
-        "deluxe-c.jpg",
-        "deluxe-d.jpg",
-        "deluxe-e.jpg",
-        "deluxe-f.jpg",
-        "deluxe-g.jpg",
-        "deluxe-h.jpg",
-        "deluxe-i.jpg",
-        "deluxe-j.jpg",
-        "deluxe-k.jpg"
+        "recliner-description1.jpg",
+        "recliner-description2.jpg",
+        "recliner-description3.jpg",
+        "recliner-description4.jpg"
       ],
       "descriptions": [
-        "Core for more Intelligent",
-        "3D Massage Manipulator",
-        "Deep Spa and Multipoint Massage"
+        "High Quality Leather and Frame",
+        "Rocking, Swivel, Reclining Function",
+        "Breathable and Water Resistant Faux Leather"
       ],
       "reviews": [
         {
           "client": "Jana A. ",
-          "review": "“I purchased Zion Deluxe last August, and until now it’s like newly bought. All functions are working with high quality leather and functions. Thank you Zion Philippines!” "
+          "review": "“I purchased Zion Recliner last August, and until now it’s like newly bought. All functions are working with high quality leather and functions. Thank you Zion Philippines!” "
         },
         {
           "client": "Mark D.",
@@ -45,11 +36,11 @@
         },
         {
           "client": "Jasper O.",
-          "review": "“Zion Deluxe is the best gift I gave to my parents. They are happy with the purchase. Affordable, yet high quality.”"
+          "review": "“Zion Recliner is the best gift I gave to my parents. They are happy with the purchase. Affordable, yet high quality.”"
         },
         {
           "client": "Vincent O.",
-          "review": "“I love the customer service support of Zion Massage Chair, they are replying every minute. They offer Cash on Delivery which is very convenient to all the buyers.”"
+          "review": "“I love the customer service support of Zion Company, they are replying every minute. They offer Cash on Delivery which is very convenient to all the buyers.”"
         },
         {
           "client": "Cassy K.",
@@ -57,7 +48,7 @@
         },
         {
           "client": "Fatima D.",
-          "review": "“Good job to delivery team, demonstrator, customer support, even the sales agent. Very smooth transaction with you guys. Thank you!” "
+          "review": "“Good job to delivery team, demonstrator, customer support, even the sales agent. Very smooth transaction with you guys. Thank you!”"
         },
         {
           "client": "George S.",
@@ -78,34 +69,23 @@
       ]
     },
     {
-      "product": "premiere",
-      "originalPrice": "131,998",
-      "price": "65,999",
-      "productImage": "premiere-shadow.png",
+      "product": "deluxe",
+      "originalPrice": "94,997.50",
+      "price": "37,999",
+      "productImage": "deluxe-shadow.png",
       "productDetailImages": [
-        "premiere-description1.jpg",
-        "premiere-description2.jpg",
-        "premiere-a.jpg",
-        "premiere-b.jpg",
-        "premiere-c.jpg",
-        "premiere-d.jpg",
-        "premiere-e.jpg",
-        "premiere-f.jpg",
-        "premiere-g.jpg",
-        "premiere-h.jpg",
-        "premiere-i.jpg",
-        "premiere-j.jpg",
-        "premiere-k.jpg"
+        "deluxe-description1.jpg",
+        "deluxe-description2.jpg"
       ],
       "descriptions": [
-        "Core for more Intelligent",
-        "4D Massage Manipulator",
-        "8 Points Massage Focus"
+        "Full Body Air Pressure Massage",
+        "3D Massage Manipulator",
+        "Zero Gravity Design"
       ],
       "reviews": [
         {
           "client": "Katherine A.",
-          "review": "“I love Zion Premier! 100% worth buy. Been using it for 5 months now, still, no damage.”"
+          "review": "“I love Zion Deluxe! 100% worth buy. Been using it for 5 months now, still, no damage.”"
         },
         {
           "client": "Haley B.",
@@ -146,20 +126,13 @@
       ]
     },
     {
-      "product": "supreme",
-      "originalPrice": "149,888",
-      "price": "69,999",
-      "productImage": "supreme-shadow.png",
+      "product": "queen",
+      "originalPrice": "137,497.50",
+      "price": "54,999",
+      "productImage": "queen-shadow.png",
       "productDetailImages": [
-        "supreme-description1.jpg",
-        "supreme-description2.jpg",
-        "supreme-a.jpg",
-        "supreme-b.jpg",
-        "supreme-c.jpg",
-        "supreme-d.jpg",
-        "supreme-e.jpg",
-        "supreme-f.jpg",
-        "supreme-g.jpg"
+        "queen-description1.jpg",
+        "queen-description2.jpg"
       ],
       "descriptions": [
         "Core for more Intelligent",
@@ -169,19 +142,19 @@
       "reviews": [
         {
           "client": "Rina G.",
-          "review": "“I’m so lucky I was able to purchase their limited edition Zion Supreme. Very elegant and worth the wait. Made with high quality leather.”"
+          "review": "“I’m so lucky I was able to purchase their limited edition Zion Queen. Very elegant and worth the wait. Made with high quality leather.”"
         },
         {
           "client": "Dante F.",
-          "review": "“I made a right decision for availing Supreme rather than the one in the mall. Same features, massage from head to foot is it!”"
+          "review": "“I made a right decision for availing Queen rather than the one in the mall. Same features, massage from head to foot is it!”"
         },
         {
           "client": "Romel Y.",
-          "review": "“Zion Supreme is the best gift I gave to my wife during our Anniversary. They said 20 days waiting time but it arrived earlier than expected. Thank you, Zion Philippines!”"
+          "review": "“Zion Queen is the best gift I gave to my wife during our Anniversary. They said 20 days waiting time but it arrived earlier than expected. Thank you, Zion Philippines!”"
         },
         {
           "client": "Gerald C.",
-          "review": "“Brand new, sealed, good demonstration, features are all working as expected. Loving my Zion Supreme for 3 months now.”"
+          "review": "“Brand new, sealed, good demonstration, features are all working as expected. Loving my Zion Queen for 3 months now.”"
         },
         {
           "client": "Ella S.",
@@ -189,11 +162,11 @@
         },
         {
           "client": "Diana B.",
-          "review": "“If you are thinking about buying Zion Supreme, don't think anymore, just buy it! You won't regret buying. Affordable and high quality indeed!“"
+          "review": "“If you are thinking about buying Zion Queen, don't think anymore, just buy it! You won't regret buying. Affordable and high quality indeed!“"
         },
         {
           "client": "Paul B.",
-          "review": "“After lots of searching, I decided to buy my massage chair from Zion Philippines. Swear, this is the best gift I bought for myself this year. Zion Supreme is my partner when it comes to relaxation!”"
+          "review": "“After lots of searching, I decided to buy my massage chair from Zion Philippines. Swear, this is the best gift I bought for myself this year. Zion Queen is my partner when it comes to relaxation!”"
         },
         {
           "client": "John S.",
@@ -201,7 +174,7 @@
         },
         {
           "client": "Christian A.",
-          "review": "“I didn't expect that my order, Zion Supreme, will shipped after a few days of transaction with them. Satisfied customer here!”"
+          "review": "“I didn't expect that my order, Zion Queen, will shipped after a few days of transaction with them. Satisfied customer here!”"
         },
         {
           "client": "Jeanine S.",
@@ -210,119 +183,78 @@
       ]
     },
     {
-      "product": "prestige",
-      "originalPrice": "159,998",
-      "price": "79,999",
-      "productImage": "prestige-shadow.png",
-      "productDetailImages": [
-        "prestige-description1.jpg",
-        "prestige-description2.jpg",
-        "prestige-a.jpg",
-        "prestige-b.jpg",
-        "prestige-c.jpg",
-        "prestige-d.jpg",
-        "prestige-e.jpg",
-        "prestige-f.jpg",
-        "prestige-g.jpg",
-        "prestige-h.jpg",
-        "prestige-i.jpg",
-        "prestige-j.jpg",
-        "prestige-k.jpg",
-        "prestige-l.jpg",
-        "prestige-m.jpg",
-        "prestige-n.jpg",
-        "prestige-o.jpg",
-        "prestige-p.jpg",
-        "prestige-q.jpg",
-        "prestige-r.jpg",
-        "prestige-s.jpg",
-        "prestige-t.jpg",
-        "prestige-u.jpg",
-        "prestige-v.jpg",
-        "prestige-w.jpg",
-        "prestige-x.jpg",
-        "prestige-y.jpg"
-      ],
+      "product": "king",
+      "originalPrice": "174,997.50",
+      "price": "69,999",
+      "productImage": "king-shadow.png",
+      "productDetailImages": ["king-description1.jpg", "king-description2.jpg"],
       "descriptions": [
         "Core for more Intelligent",
         "8D Massage Manipulator",
-        "Human Stimulation Massage"
+        "Luxury LCD touch screen and Intelligent Operation"
       ],
       "reviews": [
         {
           "client": "Valerie B.",
-          "review": "“6 months since we purchased Zion Prestige, and my family loves every minute of it. Very worth it, best investment ever!”"
+          "review": "“6 months since we purchased Zion King, and my family loves every minute of it. Very worth it, best investment ever!”"
         },
         {
           "client": "Vanessa C.",
-          "review": "“My sales representative is very kind. Good transaction with this team. I love every minute spend with my Zion Prestige.”"
+          "review": "“My sales representative is very kind. Good transaction with this team. I love every minute spend with my Zion King.”"
         },
         {
           "client": "Fatty R.",
-          "review": "“Worth every penny! My lola really loves it, she even falls asleep with her Zion Prestige. Very comfortable. Thank you Zion.”"
+          "review": "“Worth every penny! My lola really loves it, she even falls asleep with her Zion King. Very comfortable. Thank you Zion.”"
         },
         {
           "client": "Joshua H.",
-          "review": "“I love the way how their customer support discusses all the details regarding the chairs. I have purchased Zion Prestige and I can say that this is totally worth it.”"
+          "review": "“I love the way how their customer support discusses all the details regarding the chairs. I have purchased Zion King and I can say that this is totally worth it.”"
         },
         {
           "client": "Teresa G.",
-          "review": "“Prestige is like the one in the mall which costs 160k up. Thankful I found Zion. It’s true! Quality and affordable.”"
+          "review": "“King is like the one in the mall which costs 160k up. Thankful I found Zion. It’s true! Quality and affordable.”"
         },
         {
           "client": "Vincent T.",
-          "review": "“Thank you Elena, my sales representative for discussing all the functions of my Zion Prestige. Very bulky which fits my brother who is 110kg.”"
+          "review": "“Thank you Elena, my sales representative for discussing all the functions of my Zion King. Very bulky which fits my brother who is 110kg.”"
         },
         {
           "client": "Cathy L.",
-          "review": "“I feel like I am in spaceship for availing Zion Prestige in Gold. Haha! Very elegant and classy.”"
+          "review": "“I feel like I am in spaceship for availing Zion King in Gold. Haha! Very elegant and classy.”"
         },
         {
           "client": "Xyra B.",
-          "review": "“Kudos to Zion Logistics team! My Zion Prestige arrived in a very good condition, brand new and sealed.”"
+          "review": "“Kudos to Zion Logistics team! My Zion King arrived in a very good condition, brand new and sealed.”"
         },
         {
           "client": "Earl A.",
-          "review": "“This is my second time to order Zion Prestige and they never failed to exceed my expectations! The chairs are as good as their customer supports are.”"
+          "review": "“This is my second time to order Zion King and they never failed to exceed my expectations! The chairs are as good as their customer supports are.”"
         },
         {
           "client": "Jean B.",
-          "review": "“I highly recommended Zion Prestige for great massage chairs! Great product with almost all features needed for relaxation.”"
+          "review": "“I highly recommended Zion King for great massage chairs! Great product with almost all features needed for relaxation.”"
         }
       ]
     },
     {
-      "product": "executive",
-      "originalPrice": "199,998",
-      "price": "99,999",
-      "productImage": "executive-shadow.png",
-      "productDetailImages": [
-        "executive-description1.jpg",
-        "executive-description2.jpg",
-        "executive-a.jpg",
-        "executive-b.jpg",
-        "executive-c.jpg",
-        "executive-d.jpg",
-        "executive-e.jpg",
-        "executive-f.jpg",
-        "executive-g.jpg",
-        "executive-h.jpg",
-        "executive-i.jpg",
-        "executive-j.jpg"
-      ],
+      "product": "vip",
+      "originalPrice": "324,997.50",
+      "price": "129,999",
+      "productImage": "vip-shadow.png",
+      "productDetailImages": ["vip-description1.jpg", "vip-description2.jpg"],
       "descriptions": [
-        "Core for more Intelligent",
-        "8D Massage Manipulator",
-        "6 Smart Massage Programs"
+        "AI Voice Control",
+        "12 Kinds Massage Modes",
+        "Smart Sensing and Intelligent Body Detection"
       ],
       "reviews": [
         {
           "client": "Justine M.",
-          "review": "“As a businessman, the real reason why I purchased Zion Executive is to rest after a long day of work. From this, I can say that 100k worth of this kind of chair is more than enough than availing in the mall.”"
+          "review": "“As a businessman, the real reason why I purchased Zion VIP is to rest after a long day of work. From this, I can say that 100k worth of this kind of chair is more than enough than availing in the mall.”"
         },
         {
           "client": "Zia C.",
-          "review": "“After working in the hospital, my favorite place is my Zion Executive. Definitely worth it, it’s like the one in the mall which costs around 250k. Lol! Buying from this company was the best decision I’ve made.”"
+          "review": "“After working in the hospital, my favorite place is my Zion VIP. Definitely worth it, it’s like the one in the mall which costs around 250k. Lol! Buying from this company was the best decision I’ve made.”"
         },
         {
           "client": "Patrick D.",
@@ -330,15 +262,15 @@
         },
         {
           "client": "Wilson S.",
-          "review": "“I bought Zion Executive for my mom and no wonder why she loves it a lot. I'm glad to see her enjoying in relaxation after her work. Great product!”"
+          "review": "“I bought Zion VIP for my mom and no wonder why she loves it a lot. I'm glad to see her enjoying in relaxation after her work. Great product!”"
         },
         {
           "client": "Rose E.",
-          "review": "“Zion Executive is sooo stylish! I love the design, features and all. Just bought it yesterday and it is absolutely worth the money. I will sure recommend this to my friends. Thanks a lot!”"
+          "review": "“Zion VIP is sooo stylish! I love the design, features and all. Just bought it yesterday and it is absolutely worth the money. I will sure recommend this to my friends. Thanks a lot!”"
         },
         {
           "client": "Sunshine D.",
-          "review": "“I bought my husband a gift, the Zion Executive one. He loves it a lot. Going straight ahead to the chair after going home from his work. I also love the free eye massager!”"
+          "review": "“I bought my husband a gift, the Zion VIP one. He loves it a lot. Going straight ahead to the chair after going home from his work. I also love the free eye massager!”"
         },
         {
           "client": "Heart C.",

@@ -19,30 +19,12 @@
   }
 
   .client-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 1.5rem;
+    width: 100%;
 
-    @media (max-width: 768px) {
-      & {
-        grid-gap: 0.8rem;
+    .carousel-indicators {
+      li {
+        background-color: $primary !important;
       }
-    }
-
-    @media (max-width: 576px) {
-      & {
-        grid-gap: 0.4rem;
-      }
-    }
-
-    @media (max-width: 385px) {
-      & {
-        grid-gap: 0.2rem;
-      }
-    }
-
-    .client-image-container {
-      padding: 0;
     }
   }
 }

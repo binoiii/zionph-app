@@ -6,6 +6,19 @@
   }
 }
 
+//Recliner
+.modal-recliner {
+  .carousel-indicators {
+    li {
+      background-color: $recliner !important;
+    }
+  }
+
+  .prev-next-recliner {
+    color: $recliner;
+  }
+}
+
 //Deluxe
 .modal-deluxe {
   .carousel-indicators {
@@ -19,55 +32,42 @@
   }
 }
 
-//Premiere
-.modal-premiere {
+//Queen
+.modal-queen {
   .carousel-indicators {
     li {
-      background-color: $premiere !important;
+      background-color: $queen !important;
     }
   }
 
-  .prev-next-premiere {
-    color: $premiere;
+  .prev-next-queen {
+    color: $queen;
   }
 }
 
-//Prestige
-.modal-prestige {
+//King
+.modal-king {
   .carousel-indicators {
     li {
-      background-color: $prestige !important;
+      background-color: $king !important;
     }
   }
 
-  .prev-next-prestige {
-    color: $prestige;
+  .prev-next-king {
+    color: $king;
   }
 }
 
-//Prestige
-.modal-supreme {
+//VIP
+.modal-vip {
   .carousel-indicators {
     li {
-      background-color: $supreme !important;
+      background-color: $vip !important;
     }
   }
 
-  .prev-next-supreme {
-    color: $supreme;
-  }
-}
-
-//Executive
-.modal-executive {
-  .carousel-indicators {
-    li {
-      background-color: $executive !important;
-    }
-  }
-
-  .prev-next-executive {
-    color: $executive;
+  .prev-next-vip {
+    color: $vip;
   }
 }
 

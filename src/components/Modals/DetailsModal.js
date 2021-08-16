@@ -8,7 +8,7 @@ const DetailsModal = props => {
   const { product, images } = props;
   return (
     <Modal
-      className={`modal-${product} testing`}
+      className={`modal-${product}`}
       {...props}
       aria-labelledby="contained-modal-title-vcenter"
       centered

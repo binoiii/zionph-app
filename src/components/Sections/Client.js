@@ -1,7 +1,9 @@
 import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
 
-import ClientImage from "./ClientImage";
+import { useStaticQuery, graphql } from "gatsby";
+import Img from "gatsby-image";
+
+import { Carousel } from "react-bootstrap";
 
 const Client = () => {
   const data = useStaticQuery(graphql`
@@ -16,7 +18,7 @@ const Client = () => {
             name
             childImageSharp {
               id
-              fluid(maxWidth: 500, quality: 100) {
+              fluid(maxWidth: 1080, quality: 100) {
                 ...GatsbyImageSharpFluid
               }
             }
@@ -31,9 +33,17 @@ const Client = () => {
   return (
     <section className="client mt-5">
       <div className="client-container">
-        {clientImages.map(({ node }) => (
-          <ClientImage key={node.id} image={node} />
-        ))}
+        <Carousel prevIcon={null} nextIcon={null}>
+          {clientImages.map(({ node: { childImageSharp, id, name } }) => (
+            <Carousel.Item key={id} interval={2000}>
+              <Img
+                className="client-carousel-img"
+                fluid={childImageSharp.fluid}
+                alt={name}
+              />
+            </Carousel.Item>
+          ))}
+        </Carousel>
       </div>
     </section>
   );
