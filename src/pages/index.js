@@ -4,8 +4,8 @@ import SEO from "../components/Seo/Seo";
 import Layout from "../components/layout";
 import MainHeading from "../components/Headings/MainHeading";
 import Freebies from "../components/Sections/Freebies";
-import Awards from "../components/Sections/Awards";
 import Icons from "../components/Sections/Icons";
+import Awards from "../components/Sections/Awards";
 import Products from "../components/Products/Products";
 import BannerModal from "../components/Modals/BannerModal";
 import BackTop from "../components/Utilities/BackTop";
@@ -31,8 +31,8 @@ const IndexPage = () => {
         <SEO title="Home" />
         <MainHeading />
         <Freebies />
-        <Awards />
         <Icons />
+        <Awards />
         <Products />
         <BackTop />
       </Layout>
